@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<!--
+			Final Project by Mariia Gregory
+			Class: CIS-72A 42735 
+			Instructor: Scott McLeod
+	--> 
+	<meta charset="utf-8"> 
+	<title>Mariia Gregory's Feedback Page</title>
+	<link type="text/css" rel="stylesheet" href="layout.css" />
+	<link type="text/css" rel="stylesheet" href="main.css" />
+</head> 
+<body>
+	<header>
+		<p id="top"><a href="home.html" title="Home Page"><img src="logo_beach.jpg" alt="Governor's Beach, Cyprus" /></a></p>
+	</header>
+	<nav>
+		<p><a href="home.html" title="Home Page">Home</a></p>						
+		<p><a href="mylinks.htm" title="Links">Favorite Links</a></p>
+		<p><a href="myresume.html" title="Resume">Resume</a></p>
+		<p><a href="myadventures.html" title="Adventures">My Adventures</a></p>
+		<p>Feedback</p>
+		</nav>
+	<main>
+		<h1>Mariia Gregory's Feedback</h1>
+		<p><b>Send me your feedback!</b> I welcome all feedback, positive or negative. So feel free to send your comments -- it will help to keep me informed. I promise to monitor and respond to all feedback in a timely manner.
+		</p>
+		<form action="myfeedbackresponse.htm" method="post">
+		<p>Full name:<br />
+		<input type="text" name="fullname" size="30" />
+		</p>
+		
+		<p>Feedback is regarding:<br/>
+		<select name="re" >
+			<option value="design">Web site design</option>
+			<option value="content">Web site content</option>
+			<option value="problem">Web site problem</option>
+			<option value="personal">Personal issue</option>
+			<option value="other">Other</option>
+		</select>
+		</p>
+	
+		<p>Overall feeling:<br />
+		<input type="radio" name="feeling" value="satisfied" />Satisfied &nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="feeling" value="neutral" />Neutral &nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="feeling" value="unsatisfied" />Unsatisfied
+		</p>
+		
+		<p>Your comments:<br/>
+		<textarea name="comments" rows="4" cols="30"></textarea>
+		</p>
+		
+		<p>I would recomment this site to others:<br />
+		<input type="checkbox" value="yes" name="recommend" />
+		</p>
+		
+		<p>
+		<input type="submit" name="send" value="Send Feedback" />&nbsp;&nbsp;&nbsp;
+		<input type="reset" name="cancel" value="Clear Feedback" />
+		</p>
+	</form>
+	</main>
+	<footer>Copywright &copy; 2016. All rights belong to Mariia Gregory.</footer> 
+</body>
+</html>

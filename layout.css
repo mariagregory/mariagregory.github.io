@@ -1,0 +1,83 @@
+/*	
+			CSS for Final Project Layout by Mariia Gregory
+			Class: CIS-72A 42735 
+			Instructor: Scott McLeod
+*/
+body {
+		max-width: 1280px;
+		margin: 0 auto;
+}
+header {
+		height: 222px; /* corresponding to the height of a top image */
+		}
+nav {
+		width: 180px;
+		padding: 30px 10px;
+		float: left; 
+		height: 400px;
+		margin-right: 20px;
+		margin-top: 30px;
+}
+nav p {
+		display: block; /* to be able to apply border effects on each menu element so that it looks like a button  */
+		padding: 8px 10px;
+}
+main {
+		margin-left: 225px; /* indented the main content from the menu bar */
+		padding-top: 20px; 
+}
+footer {
+		margin-top: 50px;
+		margin-bottom: 30px; /* so that the footer text doesn't stick to the bottom of the screen */
+		clear: both;
+}
+div.about {
+		margin-right: 360px; /* left a space on the right for my side pictures in "Home" page */
+}
+div.pictures {
+		float: right;
+		width: 355px; /* the field width for the right-side pictures in "Home" page */
+}
+main.adventures h3,
+main.adventures h3 + p {
+		clear: both;
+}
+article .intro {
+		float: left; /* placed an image to the left from a main text */
+		margin-right: 10px;
+		margin-bottom: 4px; /* so the text below doesn't stick to an image */
+} 
+.photos_table {
+		display: table; /* alternative representation for table-looking elements */
+		width: 95%; /* to separate visually the last picture in a row from the "Top of Page" icon */
+}
+.photo_cell {
+		display: table-cell;
+		width: 25%; /* since there are four images in a line */
+}
+div.colspan {
+		width: 50%; /* the wide Taganay photo is placed in kind of two merged columns of a div-table */
+}
+.meteorite_photo {
+		/* so that the description is right right below the photo */
+		display: table-cell;
+		padding-right: 10px;
+}
+.videos {
+		/* so that the videos on "My Adventure" page are aligned in a row */
+		display: table;
+		width: 95%;
+		margin-top: 10px;
+}
+.video-1 {
+		display: table-cell;
+		width:50%;
+		margin: 0 5%;
+}
+.video-2 {
+		display: table-cell;
+		margin: 0 5%;
+}
+td.cv-section {
+		padding-right: 50px; /* so the columns in "My Resume" page do not stick */
+}

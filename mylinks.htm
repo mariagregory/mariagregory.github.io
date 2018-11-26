@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<!--
+			Final Project by Mariia Gregory
+			Class: CIS-72A 42735 
+			Instructor: Scott McLeod
+	--> 
+		<meta charset="utf-8"> 
+		<title>Mariia Gregory's Links</title> 
+		<link type="text/css" rel="stylesheet" href="layout.css" />
+		<link type="text/css" rel="stylesheet" href="main.css" />
+</head> 
+<body> 
+	<header>
+		<p id="top"><a href="home.html" title="Home Page"><img src="logo_links.jpg" alt="Sunset in Akamas, Cyprus" /></a></p>
+	</header>
+	<nav>
+		<p><a href="home.html" title="Home Page">Home</a></p>						
+		<p>Favorite Links</p>
+		<p><a href="myresume.html" title="Resume">Resume</a></p>
+		<p><a href="myadventures.html" title="Adventures">My Adventures</a></p>
+		<p><a href="myfeedback.html" title="Feedback">Feedback</a></p>
+	</nav>
+	<main>
+		<h1>Mariia Gregory's Favorite Links</h1>
+		<p>Here is a collection of my favorite Web sites, organized by general categories. Check them out and feel free to contact me with suggestions or problems. Here are the categories.</p>
+		<ul>
+			<li><a href="#languages" title="Learning Languages">Foreign Languages</a></li>
+			<li><a href="#coding" title="Computer Programming">Computer Programming</a></li>
+			<li><a href="#html" title="HTML Resources">HTML Resources</a></li>
+			<li><a href="#search" title="Search Engines">Search Engines</a></li>
+			<li><a href="#contact" title="Contact Me">Contact Me</a></li>
+		</ul>
+		<br/>
+		<h2 id='languages'>Foreign Languages</h2>
+		<dl>
+				<dt><a href="http://duolingo.com" title="Go to Duolingo web site">DuoLingo</a></dt>
+				<dd>More than 20 World Languages are available in one cozy place. Learning languages is fun!</dd>
+				<dt><a href="http://lingualeo.com/" title="Go to LinguaLeo web site">LinguaLeo</a></dt>
+				<dd>One of the most popular online sources for learning English for non-native speakers. Practice every day and let your Leo grow!</dd>
+			</dl>
+			<p style="text-align:right"><a href="#top" title="Go to Top of Page"><img src="back2top.gif" style="border: none" alt="top of page button" /></a></p>
+		<h2 id='coding'>Computer Programming</h2>
+		<dl>
+				<dt><a href="http://javarush.net" title="Go to JavaRush web site">JAVA Rush</a></dt>
+				<dd>JAVA Online Course from the Futute. Unlike listening to boring lectures, enjoy an online quest game, while learning JAVA.</dd>
+				<dt><a href="https://code-live.ru/tag/cpp-manual" title="Go to Code-Live web site">Code-Live</a></dt>
+				<dd>The web-portal for self-studyng the most popular computer programming languages. Lots of clear lessons and articles for all levels.</dd>
+		</dl>
+			<p style="text-align:right"><a href="#top" title="Go to Top of Page"><img src="back2top.gif" style="border: none" alt="top of page button" /></a></p>
+		<h2 id='html'>HTML Resources</h2>
+			<dl>
+				<dt><a href="http://www.w3.org" title="Go to W3 Consortium web site">World Wide Web Consortium</a></dt>
+				<dd>W3C creates the standarts for HTML, XHTML, CSS, XML, and many other Web technologies. They rule!</dd>
+				<dt><a href="http://www.htmlhelp.com" title="Go to HTML Help web site">HTML Help</a></dt>
+				<dd>Has HTML reference info, HTML validator and more links.</dd>
+				<dt><a href="http://www.htmlgoodies.com" title="Go to HTML Goodies web site">HTML Goodies</a></dt>
+				<dd>Lots of reference materials and examples to help you with your HTML</dd>
+			</dl>
+			<p style="text-align:right"><a href="#top" title="Go to Top of Page"><img src="back2top.gif" style="border: none" alt="top of page button" /></a></p>
+		<h2 id='search'>Search Engines</h2>
+			<dl>
+				<dt><a href="http://google.com" title="Google it!">Google</a></dt>
+				<dd>Google is one of the biggest and best search engines around.</dd>
+				<dt><a href="http://www.dogpile.com" title="Go to Dog Pile web site">Dog Pile</a></dt>
+				<dd>DogPile combines the search results of other search engines into its own results.</dd>
+			</dl>
+		<p style="text-align:right"><a href="#top" title="Go to Top of Page"><img src="back2top.gif" style="border: none" alt="top of page button" /></a></p>
+		<h2 id="contact">Contact Me</h2>
+		<p>If you find any dead links on this page or want to suggest some cool links for me to add, feel free to contact me at <a href="mailto:mgregory6@student.rcc.edu">mgregory6@student.rcc.edu</a>.</p>
+			<p style="text-align:right"><a href="#top" title="Go to Top of Page"><img src="back2top.gif" style="border: none" alt="top of page button" /></a></p>
+	</main>
+	<footer>Copywright &copy; 2016. All rights belong to Mariia Gregory.</footer>
+	
+	<!-- To take away all dotted underlines for image-like links -->
+	<script>
+        window.onload = function(){
+			var a_img = document.getElementsByTagName('img');
+			for (i=0; i<a_img.length; i++){
+				if (a_img[i].parentNode.tagName == 'A')
+					a_img[i].parentNode.style.border = 'none';
+                }
+            }
+     </script>
+	</body> 
+</html>
