@@ -46,7 +46,17 @@ article .intro {
 		float: left; /* placed an image to the left from a main text */
 		margin-right: 10px;
 		margin-bottom: 4px; /* so the text below doesn't stick to an image */
-} 
+}
+
+p.period {
+    font-style: italic;
+    margin-left: 400px;
+}
+dd {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
 .photos_table {
 		display: table; /* alternative representation for table-looking elements */
 		width: 95%; /* to separate visually the last picture in a row from the "Top of Page" icon */
@@ -81,13 +91,18 @@ div.colspan {
 		height: 275px;
 }
 
-td.cv-section {
-		padding-right: 50px; /* so the columns in "My Resume" page do not stick */
-}
 table#contact {
     margin: auto;
 }
 table#contact td {
     padding-right: 10em;
     padding-bottom: 1em;
+}
+
+h2 ~ * {
+    margin-left: 50px;
+}
+h2 ~ ol li {
+    margin-left: -20px;
+    padding-left: -20px;
 }
