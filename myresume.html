@@ -1,119 +1,165 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-	<!--
-			Final Project by Mariia Gregory
-			Class: CIS-72A 42735 
-			Instructor: Scott McLeod
-	--> 
-	<meta charset="utf-8"> 
-	<title>Mariia Gregory's Resume</title> 
-	<link type="text/css" rel="stylesheet" href="layout.css" />
-	<link type="text/css" rel="stylesheet" href="main.css" />
-</head> 
-<body> 
-	<header>
-		<p id="top"><a href="home.html" title="Go to Home Page"><img src="logo_cv.jpg" alt="Maria in New York" /></a></p>
-	</header>
-	<nav>
-		<p><a href="home.html" title="Home Page">Home</a></p>						
-		<p><a href="mylinks.htm" title="Links">Favorite Links</a></p>
-		<p>Resume</p>
-		<p><a href="myadventures.html" title="Adventures">My Adventures</a></p>
-		<p><a href="myfeedback.html" title="Feedback">Feedback</a></p>
-		</nav>
-	<main>
-		<h1>Mariia Gregory's Resume</h1>
-		<p>
-			<a href="https://www.linkedin.com/in/mariagregory/" title="My LinkedIn">My LinkedIn</a><br/>
-			<a href="https://www.google.com/maps/place/Park+Newport,+Riverside,+CA+92503/" title="Click To See my location">
-			<img src="images/icon_location.png" alt="My Address"/></a>&nbsp;XXXX Riverside, CA 92503&nbsp;&nbsp;
-			<a href="mailto:gregory83@gmail.com" title="Click to E-Mail Me">
-			<img src="images/icon_mail.png" alt="My E-mail"/></a>&nbsp;mgregory6@student.rcc.edu&nbsp;&nbsp;
-			<img src="images/icon_phone.png" alt="My Phone Number"/>&nbsp;951-3767501
-		</p>
-		<table class="resume">
-			<tr>
-				<td class="cv-section"><h2>Objective</h2></td>
-				<td><p>To obtain a position as a Web Master or in Data Entry. Full-time, part-time, and remote employment options are considered.
-				</p></td>
-			</tr>
-			<tr>
-				<td><h2>Interests</h2></td>
-				<td><ul>
-					<li>Hiking</li>
-					<li>Dancing Zumba</li>
-					<li>Continuous Learning</li>
-				</ul></td>
-			</tr>
-			<tr>
-				<td><h2>Education</h2></td>
-				<td><ol>
-					<li>Bachelor of Science, Foods Technologies and Catering Organization, 2005, South Ural State University</li>
-					<li>Assosiate of Science, Computer Applications, 2018, Riverside Community College</li>
-					<li>Assosiate of Science, Health Information Technology and RHIT certification [in plans]</li>
-				</ol></td>
-			</tr>
-			<tr>
-				<td rowspan="3"><h2>Experience</h2></td>
-				<td><h3>Secretaty<br/>
-				Promcontrol Measuring Tools, 2012-2014</h3>
-					<ul>
-						<li>Phone communication</li>
-						<li>Registration of incoming and outgoing correspondence</li>
-						<li>Composition of business letters on both Russian and English</li>
-						<li>Maintainance and organization of contract lists</li>
-						<li>Communication with transport agencies</li>
-						<li>Timely provision the office staff with working supplies</li>
-					</ul></td>
-			</tr>
-			<tr>
-				<td><h3>Web Site Moderator<br/>
-				Listik and Partners Audit and Consulting Services, 2008-2010</h3>
-					<ul>
-						<li>Daily monitor of news related to taxation and accounting and composition of unique articles by compilation of facts from reliable sources</li>
-						<li>Post news on taxation, accounting, and audit</li>
-						<li>Participation in web-site structure improvement for its better &quot;ranking&quot; by search engines and presentability of company's services</li> 
-					</ul></td>
-			</tr>
-			<tr>
-				<td><h3>Web Content Assistant<br/>
-				Reflection Web Design Studio, 2006-2008</h3>
-					<ul>
-						<li>Upload information on web sites following SEO principles and customers' business styles</li>
-						<li>Timely fix errors in web codes</li>
-						<li>Technical support assistance</li>
-					</ul></td>
-			</tr>
-			
-			<tr>
-				<td><h2>Professional Skills</h2></td>
-				<td><dl>
-					<dt>Web Technologies</dt>
-					<dd>HTML/CSS/JavaScript, C++</dd>
-					<dt>Miscrosoft Office applications</dt>
-					<dd>Word, Excel, Power Point.</dd>
-					<dt>Languages Spoken</dt>
-					<dd>Russian (native), English (fluent), Greek (high-intermediate), Spanish (elementary), Italian (elementary)</dd>
-				</dl></td>
-			</tr>
-		</table>
-		<p style="text-align:right"><a href="#top" title="Go to Top of Page">
-			<img src="back2top.gif" style="border: none" alt="top of page button" /></a></p>
-	</main>
-	
-	<footer>Copywright &copy; 2016. All rights belong to Mariia Gregory.</footer>
-	
-		<!-- To take away all dotted underlines for image-like links -->
-	<script>
-        window.onload = function(){
-			var a_img = document.getElementsByTagName('img');
-			for (i=0; i<a_img.length; i++){
-				if (a_img[i].parentNode.tagName == 'A')
-					a_img[i].parentNode.style.border = 'none';
-                }
-            }
-     </script>
-	
-</body> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+            Final Project by Mariia Gregory
+            Class: CIS-72A 42735
+            Instructor: Scott McLeod
+    -->
+    <meta charset="utf-8">
+    <title>Maria Gregory's Resume</title>
+    <link type="text/css" rel="stylesheet" href="layout.css" />
+    <link type="text/css" rel="stylesheet" href="main.css" />
+</head>
+<body>
+
+    <header>
+        <p id="top"><a href="home.html" title="Go to Home Page"><img src="logo_cv.jpg" alt="Maria in New York" /></a></p>
+    </header>
+    <nav>
+        <p><a href="home.html" title="Home Page">Home</a></p>
+        <p><a href="mylinks.htm" title="Links">Links</a></p>
+        <p>Resume</p>
+        <p><a href="myadventures.html" title="Adventures">Adventures</a></p>
+        <p><a href="myfeedback.html" title="Feedback">Feedback</a></p>
+    </nav>
+
+    <main>
+        <h1>Maria Gregory's Resume</h1>
+
+          <embed src="embed/Resume__GregoryMaria.pdf" type="application/pdf" width="100%" height="600px" />
+
+<!--
+        <table id="contact">
+        <tr>
+            <td>
+                <img src="images/icon_location.png" alt="My Address" height="50%"/>&nbsp;Riverside, CA 92503</a>
+            </td>
+            <td>
+                <img src="images/icon_phone.png" alt="Phone Number"/>&nbsp;951-3767501
+             </td>
+         </tr>
+         <tr>
+             <td>
+             <a href="mailto:gregory83@gmail.com" title="E-Mail Me"><img src="images/icon_mail.png" alt="E-mail"/>gregory83@gmail.com</a>
+             </td>
+            <td>
+
+             <a href="https://www.linkedin.com/in/mariagregory/" title="My LinkedIn">My LinkedIn</a>
+             </td>
+         </tr>
+         </table>
+-->
+       <section id="objective"><h2>Objective</h2>
+        <p>To obtain a position as a Web Master or in Data Entry. Full-time, part-time, and remote employment options are considered.
+        </p>
+        </section>
+
+        <section id="summary">
+            <h2>Summary</h2>
+                <p>Bilingual: Russian (native), Greek, Spanish (basic)
+                <br/>Detail-oriented, fast learner, excellent speller
+                <br/>Active, passionate about helping others
+                </p>
+
+                <p><strong>Computer skills</strong><br/>
+                MS Office: Word, Excel, Access, PowerPoint
+                <br/>Web-page creation using HTML/CSS, JavaScript
+                <br/>Entry-level, object-oriented programming using C++
+                <br/>Database definition and manipulation using SQL
+                <br/>Database modeling with ERD
+                <br/>Illustrating programming logic with DFD and flowcharts
+                <br/>Familiar with AutoCAD, Adobe Creative Cloud suite
+                </p>
+
+                <p><strong>Additional info</strong>
+                <br/>Future Health Information Technician (RHIT)
+                <br/>Competent in medical terminology and health records<br/>
+                </p>
+        </section>
+
+        <section id="experience">
+            <!--<header>  </header> -->
+
+            <h2>Experience</h2>
+                <h3 class="position">Tutor, Computer Lab Aide at Riverside City College</h3>
+                <p class="location">Chelyabinsk, Russia</p>
+                <time class="start">June 2016</time> - <time class="end">June 2018</time>
+                <p>Assisted students with their computer class assignments and technical issues
+                <br/>As a tutor, reinforced course materials emphasized by professors
+                <br/>Acted as a librarian for course-related textbooks
+                <br/>Performed clerical duties: answered phone calls, checked out lab inventory, interacted with visitors
+                <br/>Instructed students in lab policies concerning attendance, lab property use, and proper classroom behavior</p>
+
+                <h3 class="position">Office Manager at Promcontrol</h3>
+                <p class="location">Chelyabinsk, Russia</p>
+                <time class="start">January 2012</time> - <time class="end">December 2013</time>
+                <p>Managed incoming and outgoing phone calls
+                 <br/>Maintained records for their protection and easy retrieval
+                 <br/>Handled business correspondence<br/>Received and interacted with visitors <br/>Provided all kinds of daily support to the employees</p>
+
+                 <h3 class="position">Web Site Moderator</h3>
+                  <time class="start">May 2008</time> - <time class="end">June 2012</time>
+
+                 <ul>
+                     <li>Uba.ru, Listik and Partners (financial audit and consulting)</li>
+                     <li>Ukon.su, legal advice portal</li>
+                     <li>Showbaza.ru, organization of events</li>
+                 </ul>
+
+                <p>Composed news and articles aimed at attracting the target audience to the Web site.
+                <br/>Posted and updated Web contents (texts and multimedia) regularly and upon request.
+                <br/>Verified that a published-to-be content does not violate a copyright law and gave credits to original sources.
+                 <br/>Acted as intermediary between business owners and developers on product improvement.
+                 <br/>Provided informational and technical support to the end users. </p>
+    </section>
+
+ <section id="education">
+<h2>Education</h2>
+<ul>
+ <li>Bachelor of Science, Foods Technologies and Catering Organization, 2005, South Ural State University</li>
+ <li>Assosiate of Science, Computer Applications, 2018, Riverside Community College</li>
+ <li>Assosiate of Science, Health Information Technology, RHIT certification [in plans]</li>
+ </ul>
+
+ </section>
+
+ <section id="skills">
+<h2>Professional Skills</h2>
+<dl>
+ <dt>Web and Programming Technologies</dt>
+     <dd>HTML/CSS/JavaScript, C++, SQL</dd>
+ <dt>Miscrosoft Office applications</dt>
+     <dd>Word, Excel, Access, Power Point, Outlook, Visio</dd>
+ <dt>Languages</dt>
+     <dd>Russian (native), English (fluent), Greek (intermediate), Spanish (elementary)</dd>
+ </dl>
+         </section>
+
+<section id="hobby">
+<h2>Interests</h2>
+<ul>
+      <li>Hiking</li>
+ <li>Dancing Zumba</li>
+ </ul>
+ </section>
+
+ <p style="text-align:right"><a href="#top" title="Go to Top of Page">
+ <img src="back2top.gif" style="border: none" alt="top of page button" /></a></p>
+ </main>
+
+ <footer>Copywright &copy; 2016. All rights belong to Maria Gregory.</footer>
+
+ <!-- To take away all dotted underlines for image-like links -->
+ <script>
+ window.onload = function(){
+ var a_img = document.getElementsByTagName('img');
+ for (i=0; i<a_img.length; i++){
+ if (a_img[i].parentNode.tagName == 'A')
+ a_img[i].parentNode.style.border = 'none';
+ }
+ }
+ </script>
+
+</body>
 </html>

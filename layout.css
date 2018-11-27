@@ -1,4 +1,4 @@
-/*	
+/*
 			CSS for Final Project Layout by Mariia Gregory
 			Class: CIS-72A 42735 
 			Instructor: Scott McLeod
@@ -69,15 +69,25 @@ div.colspan {
 		width: 95%;
 		margin-top: 10px;
 }
-.video-1 {
-		display: table-cell;
-		width:50%;
-		margin: 0 5%;
+
+.video-row {
+        display: table-row;
 }
-.video-2 {
+
+
+.video {
 		display: table-cell;
-		margin: 0 5%;
+		width: 370px;
+		height: 275px;
 }
+
 td.cv-section {
 		padding-right: 50px; /* so the columns in "My Resume" page do not stick */
+}
+table#contact {
+    margin: auto;
+}
+table#contact td {
+    padding-right: 10em;
+    padding-bottom: 1em;
 }
