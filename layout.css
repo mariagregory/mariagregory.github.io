@@ -99,7 +99,7 @@ table#contact td {
     padding-bottom: 1em;
 }
 
-h2 ~ * {
+h2 + dl, h2 ~ h3, h2 ~ h3 + dl {
     margin-left: 50px;
 }
 h2 ~ ol li {
