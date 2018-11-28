@@ -73,10 +73,7 @@ article .intro {
 		margin-bottom: 4px; /* so the text below doesn't stick to an image */
 }
 
-p.period {
-    font-style: italic;
-    margin-left: 400px;
-}
+
 dd {
     margin-top: 5px;
     margin-bottom: 10px;
@@ -123,10 +120,17 @@ table#contact td {
     padding-bottom: 1em;
 }
 
-h2 + dl, h2 ~ h3, h2 ~ h3 + dl {
+p.period {
+    font-style: italic;
+
+}
+h2 ~ *,
+h3 ~ * {
     margin-left: 50px;
 }
-h2 ~ ol li {
-    margin-left: -20px;
-    padding-left: -20px;
+.period {
+    margin-left: 0;
+}
+h2 + ol {
+    margin-left: 30px;
 }
