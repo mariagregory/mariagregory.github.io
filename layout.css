@@ -59,8 +59,10 @@ footer {
 div.about {
 		margin-right: 360px; /* left a space on the right for my side pictures in "Home" page */
 }
+
 div.pictures {
 		float: right;
+		margin-top: 150px;
 		width: 355px; /* the field width for the right-side pictures in "Home" page */
 }
 main.adventures h3,
