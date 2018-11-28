@@ -136,3 +136,6 @@ h3 ~ * {
 h2 + ol {
     margin-left: 30px;
 }
+h2 {
+margin-left: 0;
+}
