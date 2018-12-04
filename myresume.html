@@ -18,17 +18,23 @@
             <a href="home.html" title="Home Page"><img src="LogoText.png" id="bg-text" /></a>
     </header>
     <nav>
-        <p><a href="home.html" title="Home Page">Home</a></p>
-        <p><a href="mylinks.htm" title="Links">Links</a></p>
-        <p>Resume</p>
-        <p><a href="myadventures.html" title="Adventures">Adventures</a></p>
-        <p><a href="myfeedback.html" title="Feedback">Feedback</a></p>
+        <div class="nav-row">
+    		<div id="nav_home"><a href="home.html" title="Home Page">Home</a></div>
+            <div id="nav_links"><a href="mylinks.htm" title="Links">Favorite Links</a></div>
+    		<div id="nav_cv"><strong>Resume</strong></div>
+            </div>
+		 <div class="nav-row">
+    		<div id="nav_adv"><a href="myadventures.html" title="Adventures">My Adventures</a></div>
+		    <div id="nav_feed"><a href="myfeedback.html" title="Feedback">Feedback</a></div>
+        </div>
     </nav>
 
     <main>
-        <h1>Maria Gregory's Resume</h1>
-
-          <embed src="embed/Resume__GregoryMaria.pdf" type="application/pdf" width="100%" height="600px" />
+        <h1>Resume</h1>
+             <iframe src="https://www.linkedin.com/in/mariagregory/" width="750" height="100">
+                                   Sorry your browser does not support inline frames.
+               </iframe>
+          <!--<embed src="embed/Resume__GregoryMaria.pdf" type="application/pdf" width="100%" height="600px" /> -->
 
 <!--
         <table id="contact">
@@ -101,7 +107,7 @@
 
                  <p class="period"> <time class="begin">May 2008</time><span> - </span><time class="end">June 2012</time> </p>
                  <h3 class="position">Web Site Moderator</h3>
-                   
+
                  <ul>
                      <li>Uba.ru, Listik and Partners (financial audit and consulting)</li>
                      <li>Ukon.su, legal advice portal</li>

@@ -8,19 +8,18 @@ body {
 		margin: 0 auto;
 }
 header {
-	  height: 222px; /* corresponding to the height of a top image */
-       position: relative;
+	  height: 300px; /* corresponding to the height of a top image */
 }
 #bg-text {
       position: absolute;
-      opacity: 50%;
+     /* opacity: 50%; */
+      display: block;
+      margin: auto;
+      top: 230px;
+      margin-left: auto;
+      margin-right: auto;
 }
-
-#home header #bg-text, .feed header #bg-text {
-      top: 5px;
-      left: 5px;
-}
- #resume header #bg-text {
+/* #resume header #bg-text {
     bottom: 5px;
     right: 5px;
 }
@@ -33,24 +32,28 @@ position: absolute;
  bottom: 10px;
     left: 5px;
 
-}
+}  */
+main {
+    /* margin-left: 225px; /* indented the main content from the menu bar */
+        margin: 100px;
+    padding: 30px 20px;
+   }
 
 nav {
-		width: 180px;
-		padding: 30px 10px;
-		float: left; 
-		height: 400px;
-		margin-right: 20px;
-		margin-top: 30px;
+    display: table;
+	width: 100%;
+    border-collapse: separate;
+  border-spacing: 50px;
 }
-nav p {
-		display: block; /* to be able to apply border effects on each menu element so that it looks like a button  */
-		padding: 8px 10px;
+nav .nav-row {
+    display: table-row;
 }
-main {
-		margin-left: 225px; /* indented the main content from the menu bar */
-		padding-top: 20px; 
+.nav-row div {
+    display: table-cell;
+    width: 200px;
+    padding: 30px;
 }
+
 footer {
 		margin-top: 50px;
 		margin-bottom: 30px; /* so that the footer text doesn't stick to the bottom of the screen */
@@ -74,8 +77,6 @@ article .intro {
 		margin-right: 10px;
 		margin-bottom: 4px; /* so the text below doesn't stick to an image */
 }
-
-
 dd {
     margin-top: 5px;
     margin-bottom: 10px;
@@ -122,10 +123,6 @@ table#contact td {
     padding-bottom: 1em;
 }
 
-p.period {
-    font-style: italic;
-
-}
 h2 ~ *,
 h3 ~ * {
     margin-left: 50px;
