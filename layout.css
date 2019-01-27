@@ -35,7 +35,7 @@ position: absolute;
 }  */
 main {
     /* margin-left: 225px; /* indented the main content from the menu bar */
-        margin: 100px;
+    margin: 100px;
     padding: 30px 20px;
    }
 
@@ -113,6 +113,9 @@ div.colspan {
 		display: table-cell;
 		width: 370px;
 		height: 275px;
+}
+.LI-profile-badge {
+float: right;
 }
 
 table#contact {
