@@ -62,6 +62,10 @@ footer {
 		font-size: small;
 		text-align: center;
 }
+footer > div {
+	text-align: center !important;
+}
+
 h1, h2, h3 {
 		color: maroon;
 }
@@ -121,4 +125,60 @@ blockquote {
 }
 table.resume td {
 	vertical-align: top;
+}
+
+div.icons {
+	margin-bottom: 30px;
+}
+
+div.icons {
+    /*width: 30%;*/
+    margin-left: 70%;
+	float: right;
+
+    /*text-transform: uppercase; */
+}
+
+footer > div.icons {
+    margin-left: auto !important;
+	margin-right: auto !important;
+	padding-left: auto !important;
+	padding-right: auto !important;
+
+/* Style all font awesome icons */
+}
+
+.fa { 
+    /*padding-top: 0;*/
+	padding-right: 50px;
+	padding-left: 25px;
+	padding-bottom: 30px;
+    width: 20px;
+	vertical-align: top;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+	background: url('smedia/fb-color.png') no-repeat;
+}
+
+/* GitHub */
+.fa-github {
+    background: url('smedia/github-color.png') no-repeat;
+}
+
+/* LinkedIn */
+
+.fa-linkedin {
+    background: url('smedia/linkedin-color.png') no-repeat;
+}
+.fa-gmail {
+    background: url('smedia/gmail-color.png') no-repeat;
 }
