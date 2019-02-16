@@ -150,6 +150,7 @@ p.period {
 .portfolio-item {
 	display: table-cell;
 	width: 40%;
+    padding-bottom: 5px;
 }
 .portfolio-item img {
 	width: 50%;
