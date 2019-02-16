@@ -8,54 +8,36 @@ body {
 		margin: 0 auto;
 }
 header {
-	  height: 300px; /* corresponding to the height of a top image */
+	margin-top: 50px;
+	height: 350px;
+	overflow: hidden;
+	background: url('logo_catalina.jpg') no-repeat;
 }
-#bg-text {
-      position: absolute;
-     /* opacity: 50%; */
-      display: block;
-      margin: auto;
-      top: 230px;
-      margin-left: auto;
-      margin-right: auto;
-}
-/* #resume header #bg-text {
-    bottom: 5px;
-    right: 5px;
-}
-#adv header #bg-text, #links header #bg-text {
-    top: 10px;
-    right: 5px;
-}
-#adv header #bg-text {
-position: absolute;
- bottom: 10px;
-    left: 5px;
 
-}  */
 main {
     /* margin-left: 225px; /* indented the main content from the menu bar */
     margin: 100px;
-    padding: 30px 20px;
+	margin-top: 0;
+    padding: 5px 20px 25px 20px;
    }
 
 nav {
-    display: table;
-	width: 100%;
-    border-collapse: separate;
-  border-spacing: 50px;
+	display: table;
+	position: absolute; /* to header*/
+	top: 10px; right: 0;
+	border-spacing: 10px;
 }
 nav .nav-row {
     display: table-row;
+	width: 100%;
 }
 .nav-row div {
     display: table-cell;
-    width: 200px;
-    padding: 30px;
+	width: 13%;
+    /*padding: 1px;*/
 }
 
 footer {
-		margin-top: 50px;
 		margin-bottom: 30px; /* so that the footer text doesn't stick to the bottom of the screen */
 		clear: both;
 }
