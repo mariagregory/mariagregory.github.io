@@ -1,25 +1,15 @@
 @charset "utf-8";
 /*
-			CSS for Final Project Main Styles by Mariia Gregory
+			CSS for Final Project Main Styles by Maria Gregory
 			Class: CIS-72A 42735 
 			Instructor: Scott McLeod
 */
 body {
 		font-family: Arial, Verdana, sans-serif;
 		font-size: 16px;
-                      background:  rgba(218, 201, 75, 0.3); /*#DAC9AF;*/
-					  background-image: url('ravenna.png'); /*#B7CDBE;*/
+        background:  rgba(218, 201, 75, 0.3); /*#DAC9AF;*/
+	    background-image: url('ravenna.png'); /*#B7CDBE;*/
 }
-header a {
-	position: absolute;
-	top: 10px;
-	left: 10px;
-	width: 30%;
-	height: 50%;
-	overflow: visible;
-	background: url('logo-draft.png') top left no-repeat;
-}
-
 
 #resume header {
 	background: url('logo_cv.jpg') no-repeat;
@@ -36,13 +26,16 @@ header a {
 #portfolio header {
 	background: url('logo_portfolio.jpg') no-repeat;
 }
-main {
-      background-color: white;
-    border: 4px ridge white;
-		border-radius: 10px;
-		box-shadow: 3px 3px 5px gray; /* tried to make a 3D-effect for the menu bar */
-  }
 
+header a {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 30%;
+	height: 50%;
+	overflow: visible;
+	background: url('logo-draft-.png') top left no-repeat;
+}
 nav {
 		font-size: 100%;
         /*background-image: url('nav_bg.jpg');  */
@@ -55,16 +48,22 @@ nav div div {
 
 }
 
-footer {
+ footer {
 		font-size: small;
 		text-align: center;
 }
+/*main*/ article {
+      background-color: white;
+    border: 4px ridge white;
+		border-radius: 10px;
+		box-shadow: 3px 3px 5px gray; /* tried to make a 3D-effect for the menu bar */
+  }
 
 /* Text styles */
 
 h1, h2, h3 {
 	color: maroon;
-	
+
 	/*font-family: 'Alex Brush', Arial, Verdana, sans-serif; */
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
@@ -78,20 +77,23 @@ h1 {
 }
 h2 {
 		font-size: 115%;
+        text-align: center;
 }
 h3 {
 		font-size: 105%;
 		color: brown;
 }
+
 a {
-		text-decoration: none; /* took away underline effect for all links */
 		color: maroon;
+        text-decoration: none; /* took away underline effect for all links */
+
 }
-a:hover {
-		color: white;
-}
-main a {
-	 border-bottom: 1px dotted maroon;
+article a {
+    border-bottom: 1px dotted maroon;
+ }
+  a:hover {
+		opacity: 0.3;
 }
 ul, ol {
 		line-height: 1.8em;	/* made items easier to read */
@@ -140,20 +142,25 @@ p.period {
 }
 
 /* Portfolio page */
-#portfolio-table {
+.dashboard-table {
 	  display: table;
-	 
+	  border-collapse: separate;
   }
-.portfolio-row {
-	display: table-row;width: 100%;
+.dashboard-row {
+	display: table-row;
+    width: 100%;
+
 }
-.portfolio-item {
+.dashboard-item {
 	display: table-cell;
-	width: 40%;
-    padding-bottom: 5px;
+	width: 40%;     height: 50px;
+    overflow: hidden;
+    text-align: center;
+        padding-bottom: 50px;
 }
-.portfolio-item img {
-	width: 50%;
+.dashboard-item img {
+	width: 60%;
+    height: auto;
 }
 
 div.icons {
@@ -163,7 +170,7 @@ div.icons {
     /*padding-top: 0;*/
 	padding-right: 50px;
 	padding-left: 25px;
-	padding-bottom: 30px;
+	padding-bottom: 40px;
     width: 20px;
 	vertical-align: top;
 }
@@ -179,16 +186,17 @@ div.icons {
 .fa-facebook {
 	background: url('smedia/fb-color.png') no-repeat;
 }
-
 /* GitHub */
 .fa-github {
     background: url('smedia/github-color.png') no-repeat;
 }
-
 /* LinkedIn */
 .fa-linkedin {
     background: url('smedia/linkedin-color.png') no-repeat;
 }
 .fa-gmail {
     background: url('smedia/gmail-color.png') no-repeat;
+}
+.fa-vk {
+    background: url('smedia/vk-color.png') no-repeat;
 }
