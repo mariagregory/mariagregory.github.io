@@ -145,6 +145,8 @@ p.period {
 .dashboard-table {
 	  display: table;
 	  border-collapse: separate;
+	 margin-left: auto;
+	  margin-right: auto;
   }
 .dashboard-row {
 	display: table-row;
