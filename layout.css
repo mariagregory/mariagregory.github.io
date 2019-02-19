@@ -21,9 +21,8 @@ main {
     padding: 0;
    }
 
-   article {
+article {
        	margin-top: 0;
-
        margin: 50px;
    padding: 5px 20px 25px 20px;
    }
@@ -50,12 +49,17 @@ footer {
 }
 div.about {
 		margin-right: 360px; /* left a space on the right for my side pictures in "Home" page */
+		margin-top: 30px;
 }
 
-div.pictures {
+figure.home-pic {
 		float: right;
-		margin-top: 150px;
+		margin-right: 0;
+		margin-top: 5%;
 		width: 355px; /* the field width for the right-side pictures in "Home" page */
+}
+figcaption {
+	text-align: center;
 }
 main.adventures h3,
 main.adventures h3 + p {
