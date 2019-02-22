@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--
+			Final Project by Maria Gregory
+			Class: CIS-72A 42735 
+			Instructor: Scott McLeod
+	--> 
+	<meta charset="utf-8"/> 
+	<title>Contact</title>
+	<link type="text/css" rel="stylesheet" href="layout.css" />
+	<link type="text/css" rel="stylesheet" href="main.css" />
+	<style> span.note { font-style: italic; color: darkred; } </style>
+</head> 
+<body id="contact">
+	<header>
+		<a href="home.html" title="Go to Home Page"></a>
+	</header>
+    
+	<nav>
+        <div class="nav-row">
+    		<div id="nav_home"><a href="home.html" title="Home Page">Home</a></div>
+            <div id="nav_links"><a href="portfolio.html" title="Portfolio">Portfolio</a></div>
+    		<div id="nav_cv"><a href="myresume.html" title="Resume">Resume</a></div>
+    		<div id="nav_adv"><a href="myadventures.html" title="Adventures">Adventures</a></div>
+			<div id="nav_links"><a href="mylinks.htm" title="Links">Links</a></div>
+		    <div id="nav_feed"><strong>Contact</strong></div>
+        </div>
+		</nav>
+	<main>
+		<h1>Contact</h1>
+        <div class="icons">
+			<a href="https://www.facebook.com/fitnessmary/" class="fa fa-facebook"></a>
+			<a href="https://github.com/uralmasha/" class="fa fa-github"></a>
+			<a href="https://www.linkedin.com/in/mariagregory/" class="fa fa-linkedin"></a>
+			<a href="mailto:gregorymaria83@gmail.com" class="fa fa-gmail"></a>
+            <a href="https://vk.com/gabitovamf" class="fa fa-vk"></a>
+		</div>
+        <article>
+			<p><span class="note">Sorry, this form is not functional yet!<br/>
+			You can still play with fields and buttons, but nothing will happen.</span></p>
+			<p>I welcome all feedback, positive or negative. So feel free to send your comments; it will help to keep me informed. 
+			I promise to monitor and respond to all feedback in a timely manner.
+			</p>
+			
+			<!--FORM-->
+			<form id="feedback" action=" /submit.php" method="post"> <!--"contactresponse.htm"--> 
+			
+				<p><label for="name">Name:</label><br />
+				<input type="text" name="name" id="name" size="30" /></p>
+				<p><label for="email">E-mail:</label><br />
+				<input type="text" name="email" size="30" /></p>
+
+				<p>
+				<label for="re">Feedback regarding:</label> <span class="note" style="color: gray;">(Choose any; it doesn't matter really)</span><br/>
+				<select name="re" id="re">
+					<option value="design">Web site design</option>
+					<option value="content">Web site content</option>
+					<option value="problem">Web site problem</option>
+					<option value="personal">Personal issue</option>
+					<option value="other">Other</option>
+				</select>
+				</p>
+			
+				<p><label for="feeling">Overall feeling:</label><br />
+				<input type="radio" name="feeling" value="satisfied" />Satisfied &nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="radio" name="feeling" value="neutral" />Neutral &nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="radio" name="feeling" value="unsatisfied" />Unsatisfied
+				</p>
+				
+				<p><label for="comments">Your comments:</label><br/>
+				<textarea name="comments" rows="4" cols="30"></textarea>
+				</p>
+				
+				<p><label for="recommend">I would recomment this site to others:</label><br />
+				<input type="checkbox" value="yes" name="recommend" />
+				</p>
+				
+				<p>
+				<input type="submit" name="send" value="Send Feedback" />&nbsp;&nbsp;&nbsp;
+				<input type="reset" name="cancel" value="Clear Feedback" />
+				</p>
+			</form>
+		</article>
+	</main>
+	<footer>
+           <!-- Icons -->
+		<div class="icons">
+			<a href="https://www.facebook.com/fitnessmary/" class="fa fa-facebook"></a>
+			<a href="https://github.com/uralmasha/" class="fa fa-github"></a>
+			<a href="https://www.linkedin.com/in/mariagregory/" class="fa fa-linkedin"></a>
+			<a href="mailto:gregorymaria83@gmail.com" class="fa fa-gmail"></a>
+            <a href="https://vk.com/gabitovamf" class="fa fa-vk"></a>
+		</div>
+		<div>Copywright &copy; 2016. All rights belong to Maria Gregory.<br/>
+		Logo is created with <a href="https://cooltext.com/Logo-Design-White" target="blank" title="The source will open in a new tab">Cooltext.com</a><br/>
+		The site was initilly created as an assignment for <a href="http://www.faculty.rcc.edu/mcleod/html/" target="blank" title="The source will open in a new tab">Scott McLeod</a>'s class
+		</div>
+	</footer>
+</body>
+</html>

@@ -17,7 +17,7 @@ body {
 #adv header {
 	background: url('logo_adv.jpg') no-repeat;
 }
-.feed header {
+#contact header {
 	background: url('logo_beach.jpg') no-repeat;
 }
 #links header {
