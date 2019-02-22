@@ -44,8 +44,14 @@
 			</p>
 			
 			<!--FORM-->
-			<form id="feedback" action=" /submit.php" method="post"> <!--"contactresponse.htm"--> 
-			
+			<form id="feedback" action=" /mail.php" method="post"> <!--"contactresponse.htm"-->
+                <!--Use <fieldset> with <legend> inside for a nice looking border-->
+                <!--HIDDEN FIELDS-->
+                <input type="hidden" name="admin_email" value="gregorymaria83@gmail.com"/>
+                <input type="hidden" name="project_name" value="Uralmasha on Github"/>
+                <input type="hidden" name="form_subject" value="Message from Uralmasha"/>
+                <!--END OF HIDDEN FIELDS-->
+
 				<p><label for="name">Name:</label><br />
 				<input type="text" name="name" id="name" size="30" /></p>
 				<p><label for="email">E-mail:</label><br />
@@ -77,7 +83,8 @@
 				</p>
 				
 				<p>
-				<input type="submit" name="send" value="Send Feedback" />&nbsp;&nbsp;&nbsp;
+				<button name="send" value="Send Feedback" >Send Feedback</button><!--<input type="submit" name="send" value="Send Feedback" />-->&nbsp;&nbsp;&nbsp;
+                <!--Or <button> instead of <input type="submit">-->
 				<input type="reset" name="cancel" value="Clear Feedback" />
 				</p>
 			</form>
@@ -97,5 +104,7 @@
 		The site was initilly created as an assignment for <a href="http://www.faculty.rcc.edu/mcleod/html/" target="blank" title="The source will open in a new tab">Scott McLeod</a>'s class
 		</div>
 	</footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1-11.3.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
