@@ -48,11 +48,14 @@ nav div div {
 
 }
 
- footer {
+footer {
 		font-size: small;
 		text-align: center;
+        padding-top: -50px;
 }
-/*main*/ article {
+
+/*main*/
+article {
       background-color: white;
     border: 4px ridge white;
 		border-radius: 10px;
@@ -102,7 +105,7 @@ ul, ol {
 /* Adventures page */
 main.adventures h3,
 main.adventures h3 + p {
-	text-align: center; 
+	text-align: center;
 		/* text of "Samples of my photo collection ..."
 		and "Click on any picture to see it in full size" in "My Adventures" page  */
 }
@@ -178,16 +181,34 @@ p.period {
 }
 div.icons {
 	height: 60px;
+    /*auto; margin-right: auto;*/
+    margin-top: -50px;
+    padding-top: 0;
+    margin-bottom: 10px;
 }
-.fa { 
+.fa {
     /*padding-top: 0;*/
 	padding-right: 50px;
 	padding-left: 25px;
 	padding-bottom: 40px;
     width: 20px;
-	vertical-align: top;
+}
+/*.fa:last-child {
+    margin-bottom: 0;
+} */
+
+#contact .icons {
+    position: absolute;
+    top: 570px;
+    right: 100px;
 }
 
+#contact .fa {
+    display: block;
+    width: 100px;
+    height: 50px;
+     overflow: visible;
+}
 /* Add a hover effect if you want */
 .fa:hover {
     opacity: 0.7;

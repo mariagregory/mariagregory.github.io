@@ -20,12 +20,6 @@ main {
     padding: 0;
    }
 
-article {
-       margin: 50px;	margin-top: 0;
-       
-   padding: 5px 20px 25px 20px;
-   }
-
 nav {
 	display: table;
 	position: absolute; /* to header*/
@@ -40,6 +34,14 @@ nav .nav-row {
     display: table-cell;
 	width: 13%;
     /*padding: 1px;*/
+}
+
+article {
+       margin: 50px;	margin-top: 0;
+       padding: 5px 20px 25px 20px;
+   }
+#contact main article {
+    width: 50%;
 }
 
 footer {
