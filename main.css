@@ -201,15 +201,16 @@ div.icons {
 
 #contact .icons {
     position: absolute;
+    width: 250px;
     top: 570px;
     right: 100px;
 }
 
 #contact .fa {
     display: block;
-    width: 100px;
+    width: 200px;
     height: 50px;
-     overflow: visible;
+    overflow: visible;
 }
 /* Add a hover effect if you want */
 .fa:hover {
@@ -235,4 +236,19 @@ div.icons {
 }
 .fa-vk {
     background: url('smedia/vk-color.png') no-repeat;
+}
+#contact .fa-facebook {
+    background: url('smedia/fb-text.png') no-repeat;
+}
+#contact .fa-github{
+    background: url('smedia/github-text.png') no-repeat;
+}
+#contact .fa-linkedin {
+    background: url('smedia/linkedin-text.png') no-repeat;
+}
+#contact .fa-gmail {
+    background: url('smedia/gmail-text.png') no-repeat;
+}
+#contact .fa-vk {
+    background: url('smedia/vk-text.png') no-repeat;
 }
