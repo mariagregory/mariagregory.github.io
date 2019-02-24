@@ -1,0 +1,371 @@
+<!DOCTYPE html><html><head><title>Preview</title>
+<style type="text/css"><!--
+@charset "utf-8";
+/*
+			CSS for Final Project Main Styles by Maria Gregory
+			Class: CIS-72A 42735 
+			Instructor: Scott McLeod
+*/
+body {
+		font-family: Arial, Verdana, sans-serif;
+		font-size: 16px;
+        background:  rgba(218, 201, 75, 0.3); /*#DAC9AF;*/
+	    background-image: url('ravenna.png'); /*#B7CDBE;*/
+}
+
+#resume header {
+	background: url('logo_cv.jpg') no-repeat;
+}
+#adv header {
+	background: url('logo_adv.jpg') no-repeat;
+}
+#contact header {
+	background: url('logo_beach.jpg') no-repeat;
+}
+#links header {
+	background: url('logo_links.jpg') no-repeat;
+}
+#portfolio header {
+	background: url('logo_portfolio.jpg') no-repeat;
+}
+
+header a {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 12%;
+	height: 23%;
+	overflow: visible;
+	background: url('logo-draft-.png') top left no-repeat;
+}
+nav {
+		font-size: 100%;
+        /*background-image: url('nav_bg.jpg');  */
+}
+nav div div {
+    text-align: center;
+    background-clip: padding-box;
+    text-transform: uppercase;
+    /* border: 1px solid black;  */
+
+}
+
+footer {
+		font-size: small;
+		text-align: center;
+        padding-top: -50px;
+}
+
+/*main*/
+article {
+      background-color: #eee;
+    /*border: 4px ridge white;  */
+		border-radius: 10px;
+		box-shadow: 3px 3px 5px gray; /* tried to make a 3D-effect for the menu bar */
+  }
+section#hobby {
+
+  background-color: beige;
+
+		box-shadow: 3px 3px 5px gray; /* tried to make a 3D-effect for the menu bar */
+  }
+
+/* Text styles */
+
+h1, h2, h3 {
+	color: maroon;
+    margin-bottom: 0; padding-bottom: 0;
+	/*font-family: 'Alex Brush', Arial, Verdana, sans-serif; */
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+h1 {
+	font-size: 250%;
+	color: white;
+	text-shadow: 3px 3px 6px black; /*darkslategray;*/
+    display: block;
+    margin-top: -200px;
+    margin-bottom: 200px;
+}
+h2 { font-size: 130%; }
+
+article h2 {
+    display: block;
+
+    text-align: center;
+    margin: 20px;
+    border-bottom: 1px solid gray;
+}
+
+/*article h2 {
+
+    /*background:    #9A7469;/*#A52A2A;   */
+    /*background-image: linear-gradient(to right, #eee, #A52A2A,#eee);       */
+    /*color: white;
+    border-radius: inherit;
+    box-shadow:inherit;
+} */
+
+h3 {
+		font-size: 115%;
+		color: brown;
+        margin: 2em;
+}
+h4 {
+     color: #A52A2A;
+
+}
+
+a {
+		color: maroon;
+        text-decoration: none; /* took away underline effect for all links */
+
+}
+article a {
+    border-bottom: 1px dotted maroon;
+ }
+a:hover {
+		opacity: 0.3;  text-decoration: none;
+}
+
+ul, ol {
+		line-height: 1.8em;	/* made items easier to read */
+}
+#hobby ul {
+    margin: 0;
+}
+
+/* Adventures page */
+main.adventures h3,
+main.adventures h3 + p {
+	text-align: center;
+		/* text of "Samples of my photo collection ..."
+		and "Click on any picture to see it in full size" in "My Adventures" page  */
+}
+figcaption {
+		/* for the explanatory text below the picture in "Ural" section of "My Adventures" page */
+		font-size: 95%;
+		text-align: center;
+}
+div.pictures {
+		text-align: center;	
+}
+.photos_table {
+		font-size: 95%;
+		text-align: center;
+}
+.meteorite_photo {
+	font-size: 90%;
+	text-align: center;
+}
+blockquote {
+	font-style: italic;
+	font-size: 1.1em;
+}
+.videos {
+		text-align: center;
+		vertical-align: middle;
+		font-size: 95%;
+}
+
+/* Resume page */
+table.resume td {
+	vertical-align: top;
+}
+p.period {
+    font-style: italic;
+
+}
+
+/* Portfolio page */
+.dashboard-table {
+	  display: table;
+	  border-collapse: separate;
+      border-spacing: 5px;
+	  margin-left: auto;
+	  margin-right: auto;
+       margin-top: 0;
+      padding-top: 0;
+  }
+.dashboard-row {
+	display: table-row;
+    width: 100%;
+}
+.dashboard-item {
+	display: table-cell;
+	width: 30%;     height: 100px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/*.adventures .dashboard-item {
+	width: auto;
+} */
+
+.dashboard-item img {
+    width: 300px;
+    height: 250px;
+    vertical-align: top;
+    object-fit: cover;/*none; /*cover; /*contain; */     /*scale-down; */
+        overflow: hidden;
+}
+.adventures .dashboard-item img {
+    width: 230px;
+	object-fit: contain;
+}
+div.icons {
+	height: 60px;
+    /*auto; margin-right: auto;*/
+    margin-top: 0px;
+    padding-top: 0;
+    margin-bottom: 10px;
+}
+.fa {
+    /*padding-top: 0;*/
+	padding-right: 50px;
+	padding-left: 25px;
+	padding-bottom: 40px;
+    width: 20px;
+}
+/*.fa:last-child {
+    margin-bottom: 0;
+} */
+
+#contact .icons {
+    position: absolute;
+    width: 250px;
+    top: 570px;
+    right: 100px;
+}
+
+#contact .fa {
+    display: block;
+    width: 200px;
+    height: 50px;
+    overflow: visible;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+	background: url('smedia/fb-color.png') no-repeat;
+}
+/* GitHub */
+.fa-github {
+    background: url('smedia/github-color.png') no-repeat;
+}
+/* LinkedIn */
+.fa-linkedin {
+    background: url('smedia/linkedin-color.png') no-repeat;
+}
+.fa-gmail {
+    background: url('smedia/gmail-color.png') no-repeat;
+}
+.fa-vk {
+    background: url('smedia/vk-color.png') no-repeat;
+}
+#contact .fa-facebook {
+    background: url('smedia/fb-text.png') no-repeat;
+}
+#contact .fa-github{
+    background: url('smedia/github-text.png') no-repeat;
+}
+#contact .fa-linkedin {
+    background: url('smedia/linkedin-text.png') no-repeat;
+}
+#contact .fa-gmail {
+    background: url('smedia/gmail-text.png') no-repeat;
+}
+#contact .fa-vk {
+    background: url('smedia/vk-text.png') no-repeat;
+}
+
+--></style>
+</head>
+<body>
+<a name="0"></a><br style="clear: both">
+<a name="1"></a><div style="position: static;" id="resume"><header style="position: static;">#resume header</header></div><br style="clear: both">
+<a name="2"></a><div style="position: static;" id="adv"><header style="position: static;">#adv header</header></div><br style="clear: both">
+<a name="3"></a><div style="position: static;" id="contact"><header style="position: static;">#contact header</header></div><br style="clear: both">
+<a name="4"></a><div style="position: static;" id="links"><header style="position: static;">#links header</header></div><br style="clear: both">
+<a name="5"></a><div style="position: static;" id="portfolio"><header style="position: static;">#portfolio header</header></div><br style="clear: both">
+<a name="6"></a><header style="position: static;"><div style="position: static;">header a</div>
+</header><br style="clear: both">
+<a name="7"></a><nav style="position: static;">nav</nav><br style="clear: both">
+<a name="8"></a><nav style="position: static;"><div style="position: static;"><div style="position: static;">nav div div</div></div></nav><br style="clear: both">
+<a name="9"></a><footer style="position: static;">footer</footer><br style="clear: both">
+<a name="10"></a><article style="position: static;">article</article><br style="clear: both">
+<a name="11"></a><section style="position: static;" id="hobby">section#hobby</section><br style="clear: both">
+<a name="12"></a><h1 style="position: static;">h1</h1><br style="clear: both">
+<a name="13"></a><h2 style="position: static;">h2</h2><br style="clear: both">
+<a name="14"></a><h3 style="position: static;">h3</h3><br style="clear: both">
+<a name="15"></a><h1 style="position: static;">h1</h1><br style="clear: both">
+<a name="16"></a><h2 style="position: static;">h2</h2><br style="clear: both">
+<a name="17"></a><article style="position: static;"><h2 style="position: static;">article h2</h2></article><br style="clear: both">
+<a name="18"></a><h3 style="position: static;">h3</h3><br style="clear: both">
+<a name="19"></a><h4 style="position: static;">h4</h4><br style="clear: both">
+<a name="20"></a><a href="http://www.blumentals.net" target="_blank" style="position: static;">a</a><br style="clear: both">
+<a name="21"></a><article style="position: static;"><div style="position: static;">article a</div>
+</article><br style="clear: both">
+<a name="22"></a><a href="http://www.blumentals.net" target="_blank" style="position: static;">a:hover</a><br style="clear: both">
+<a name="23"></a><ul style="position: static;"><li>ul</li></ul><br style="clear: both">
+<a name="24"></a><ol style="position: static;"><li>ol</li></ol><br style="clear: both">
+<a name="25"></a><div style="position: static;" id="hobby"><ul style="position: static;"><li>#hobby ul</li></ul></div><br style="clear: both">
+<a name="26"></a><main style="position: static;" class="adventures"><h3 style="position: static;">main.adventures h3</h3></main><br style="clear: both">
+<a name="27"></a><main style="position: static;" class="adventures"><h3 style="position: static;"></h3><div style="position: static;">main.adventures h3 + p</div>
+</main><br style="clear: both">
+<a name="28"></a><figcaption style="position: static;">figcaption</figcaption><br style="clear: both">
+<a name="29"></a><div style="position: static;" class="pictures">div.pictures</div><br style="clear: both">
+<a name="30"></a><div style="position: static;" class="photos_table">.photos_table</div>
+<br style="clear: both">
+<a name="31"></a><div style="position: static;" class="meteorite_photo">.meteorite_photo</div>
+<br style="clear: both">
+<a name="32"></a><blockquote style="position: static;">blockquote</blockquote><br style="clear: both">
+<a name="33"></a><div style="position: static;" class="videos">.videos</div>
+<br style="clear: both">
+<a name="34"></a><table style="position: static;" class="resume"><table><tr><td style="position: static;">table.resume td</td></tr></table></table><br style="clear: both">
+<a name="35"></a><p style="position: static;" class="period">p.period</p><br style="clear: both">
+<a name="36"></a><div style="position: static;" class="dashboard-table">.dashboard-table</div>
+<br style="clear: both">
+<a name="37"></a><div style="position: static;" class="dashboard-row">.dashboard-row</div>
+<br style="clear: both">
+<a name="38"></a><div style="position: static;" class="dashboard-item">.dashboard-item</div>
+<br style="clear: both">
+<a name="39"></a><div style="position: static;" class="dashboard-item"><img src="file://C:\Program Files (x86)\WeBuilder 2018\data\resources\preview.png" style="position: static;"> .dashboard-item img</div><br style="clear: both">
+<a name="40"></a><div style="position: static;" class="adventures"><div style="position: static;" class="dashboard-item"><img src="file://C:\Program Files (x86)\WeBuilder 2018\data\resources\preview.png" style="position: static;"> .adventures .dashboard-item img</div></div><br style="clear: both">
+<a name="41"></a><div style="position: static;" class="icons">div.icons</div><br style="clear: both">
+<a name="42"></a><div style="position: static;" class="fa">.fa</div>
+<br style="clear: both">
+<a name="43"></a><div style="position: static;" id="contact"><div style="position: static;" class="icons">#contact .icons</div>
+</div><br style="clear: both">
+<a name="44"></a><div style="position: static;" id="contact"><div style="position: static;" class="fa">#contact .fa</div>
+</div><br style="clear: both">
+<a name="45"></a><div style="position: static;" class="fa">.fa:hover</div>
+<br style="clear: both">
+<a name="46"></a><div style="position: static;" class="fa-facebook">.fa-facebook</div>
+<br style="clear: both">
+<a name="47"></a><div style="position: static;" class="fa-github">.fa-github</div>
+<br style="clear: both">
+<a name="48"></a><div style="position: static;" class="fa-linkedin">.fa-linkedin</div>
+<br style="clear: both">
+<a name="49"></a><div style="position: static;" class="fa-gmail">.fa-gmail</div>
+<br style="clear: both">
+<a name="50"></a><div style="position: static;" class="fa-vk">.fa-vk</div>
+<br style="clear: both">
+<a name="51"></a><div style="position: static;" id="contact"><div style="position: static;" class="fa-facebook">#contact .fa-facebook</div>
+</div><br style="clear: both">
+<a name="52"></a><div style="position: static;" id="contact"><div style="position: static;" class="fa-github">#contact .fa-github</div>
+</div><br style="clear: both">
+<a name="53"></a><div style="position: static;" id="contact"><div style="position: static;" class="fa-linkedin">#contact .fa-linkedin</div>
+</div><br style="clear: both">
+<a name="54"></a><div style="position: static;" id="contact"><div style="position: static;" class="fa-gmail">#contact .fa-gmail</div>
+</div><br style="clear: both">
+<a name="55"></a><div style="position: static;" id="contact"><div style="position: static;" class="fa-vk">#contact .fa-vk</div>
+</div><br style="clear: both">
+
+</body></html>

@@ -7,7 +7,22 @@
             Instructor: Scott McLeod
     -->
     <meta charset="utf-8">
+        <!--Bootstrap 3 is designed to be responsive to mobile devices. Mobile-first styles are part of the core framework.
+        To ensure proper rendering and touch zooming, add the following <meta> tag inside the <head> element:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Maria Gregory's Resume</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+    The initial-scale=1 part sets the initial zoom level when the page is first loaded by the browser.          -->
+
     <link type="text/css" rel="stylesheet" href="layout.css" />
     <link type="text/css" rel="stylesheet" href="main.css" />
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
@@ -62,12 +77,16 @@ https://scontent-lax3-1.xx.fbcdn.net/v/t1.15752-9/51856698_616633158760848_18246
         </p>
         </section>
 -->
-             <article>
+        <!--LinkedIn badge-->
+        <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="mariagregory">
+            <a class="LI-simple-link" href='https://www.linkedin.com/in/mariagregory?trk=profile-badge'>Maria Gregory</a>
+        </div>
+
+
+        <article>  <h2>Entry-level Web Developer, Data Entry</h2>
         <section id="summary">
-            <h2>Professional Skills</h2>
-            <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="mariagregory">
-                <a class="LI-simple-link" href='https://www.linkedin.com/in/mariagregory?trk=profile-badge'>Maria Gregory</a>
-            </div>
+            <h3>Professional Skills</h3>
+
             <dl>
              <dt>Miscrosoft Office applications</dt>
                  <dd>Word, Excel, Access, Power Point, Outlook<br/>
@@ -75,26 +94,26 @@ https://scontent-lax3-1.xx.fbcdn.net/v/t1.15752-9/51856698_616633158760848_18246
              <dt>Web, Database, and Programming Technologies</dt>
                  <dd>HTML/CSS/JavaScript, C++, SQL<br/>
                  ERD, Normalization, Flowcharting<br/>
-                <strong><a href="portfolio.html" title="Portfolio links">My Portfolio Links</a></strong></dd>
-            <dt>Graphical applications</dt>
-                <dd>Familiar with AutoCAD, Adobe Creative Cloud</dd>
+                </dd>
+            <dt>Graphical applications (familiar)</dt>
+                <dd>AutoCAD, Adobe Creative Cloud</dd>
 			<dt>Other software
-				<dd>Basic knowledge of QuickBooks</dd>
+				<dd>QuickBooks (basic)</dd>
 			</dt>
             <dt>Languages</dt>
                 <dd>Russian (native), English (fluent), Greek (intermediate), Spanish (elementary)</dd>
             <dt>Personal</dt>
                 <dd>Fast learner<br/>Customer focused<br/>Detail oriented<br/>Communicable<br/>Stress resistant<br/>
-                Fitness enthusiast<br/>Competent in medical terminology</dd>
+                Competent in medical terminology</dd>
             </dl>
-        </section>
+        </section>    <hr/>
 
         <section id="experience">
             <!--<header>  </header> -->
 
-            <h2>Experience</h2>
+            <h3>Experience</h3>
                 <p class="period"><time class="begin">June 2016</time><span> - </span><time class="end">June 2018</time></p>
-                <h3 class="position">Tutor, Computer Lab Aide at Riverside City College</h3>
+                <h4 class="position">Tutor, Computer Lab Aide at Riverside City College</h4>
 
                 <p>Assisted students with their computer class assignments
                 <br/>As a tutor, reinforced course materials emphasized by professors
@@ -104,14 +123,14 @@ https://scontent-lax3-1.xx.fbcdn.net/v/t1.15752-9/51856698_616633158760848_18246
 
                 <p class="period"><time class="begin">January 2013</time><span> - </span><time class="end">December 2013</time></p>
                 <!--<p class="location">Chelyabinsk, Russia</p> -->
-                <h3 class="position">Office Manager at Promcontrol</h3>
+                <h4 class="position">Office Manager at Promcontrol</h4>
 
                 <p>Managed incoming and outgoing phone calls
                  <br/>Maintained records for their protection and easy retrieval
                  <br/>Handled business correspondence<br/>Received and interacted with visitors <br/>Provided all kinds of daily support to the employees</p>
 
                  <p class="period"> <time class="begin">May 2008</time><span> - </span><time class="end">December 2012</time> </p>
-                 <h3 class="position">Web Site Moderator</h3>
+                 <h4 class="position">Web Site Moderator</h4>
 
                  <ul>
                      <li>Uba.ru, Listik and Partners, financial audit and consulting</li>
@@ -122,10 +141,10 @@ https://scontent-lax3-1.xx.fbcdn.net/v/t1.15752-9/51856698_616633158760848_18246
                 <br/>Posted and updated contents (texts and multimedia) regularly and upon request.
                  <br/>Acted as intermediary between business owners and developers on product improvement.
                  <br/>Provided informational and technical support to the end users. </p>
-		</section>
-
+		</section>  <hr/>
+            
 		 <section id="education">
-			<h2>Education</h2>
+			<h3>Education</h3>
 			<ol>
 			 <li>Bachelor of Science, Foods Technology and Public Catering, 2000-2005, South Ural State University</li>
 			 <li>Assosiate of Science, Computer Applications, 2015-2018, Riverside Community College</li>
@@ -136,8 +155,8 @@ https://scontent-lax3-1.xx.fbcdn.net/v/t1.15752-9/51856698_616633158760848_18246
 
 		 </section>
 	</article>
-		 <p style="text-align:right"><a href="#top" title="Go to Top of Page">
-		 <img src="back2top.gif" style="border: none" alt="top of page button" /></a></p>
+		 <!--<p style="text-align:right"><a href="#top" title="Go to Top of Page">
+		 <img src="back2top.gif" style="border: none" alt="top of page button" /></a></p>   -->
  </main>
 
 <footer>

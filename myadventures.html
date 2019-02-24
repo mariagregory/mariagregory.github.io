@@ -6,8 +6,24 @@
 			Class: CIS-72A 42735 
 			Instructor: Scott McLeod
 	-->
-	<meta charset="utf-8"> 
+	<meta charset="utf-8">
+
+    <!--Bootstrap 3 is designed to be responsive to mobile devices. Mobile-first styles are part of the core framework.
+        To ensure proper rendering and touch zooming, add the following <meta> tag inside the <head> element:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Maria Gregory's Adventures</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+    The initial-scale=1 part sets the initial zoom level when the page is first loaded by the browser.          -->
+
 	<link type="text/css" rel="stylesheet" href="layout.css" />
 	<link type="text/css" rel="stylesheet" href="main.css" />
 </head> 
@@ -93,8 +109,8 @@
 
         <article id="cyprus">
             <h2>Vacations in Cyprus</h2>
-			<p><img class="intro" src="images/cyprus/cyprus_gov.jpg" alt="Vacations in Cyprus" />
-				My hometown, Chelyabinsk, is located deeply inland, but since there are many lakes, finding a place for swimming in summer is not a problem. 
+			<figure  class="intro"><img src="images/cyprus/cyprus_gov.jpg" alt="Vacations in Cyprus" /> </figure>
+			   <p>	My hometown, Chelyabinsk, is located deeply inland, but since there are many lakes, finding a place for swimming in summer is not a problem.
 				But, of course, nothing can compare with sea water.</p>
 				<p>Finally, I made it to the Mediterranean coast in June 2012 for 10-day vacations. It was unforgettable! The water is incredibly clean, 
 				food is great, people are very hospitable and friendly. The island is small, its population is only about 700 thousands people, 
@@ -106,24 +122,25 @@
 			<div class="photos_table" >
 				<div class="photo_cell"><a href="images/cyprus/amathus.jpg" title="View the Full Size Image">
 					<img src="images/cyprus/amathus_s.jpg" alt="Amathus, Cyprus"/></a>
-					<br/>Ruins of ancients civilizations remind<br />us that nothing is eternal in our life.
+					<br/>Ruins of ancients civilizations remind<br />us that nothing is eternal
 				</div>
 				<div class="photo_cell"><a href="images/cyprus/cyprus_as_mars.jpg" title="View the Full Size Image">
 					<img src="images/cyprus/cyprus_as_mars_s.jpg" alt="Sunset in Cyprus" /></a>
-					<br/>When sunset starts, <br />the earth surface reminds Mars. 
+					<br/>When sunset starts, <br />the earth surface reminds Mars
 				</div>
+            </div><br/>
+            <div class="photos_table" >
 				<div class="photo_cell"><a href="images/cyprus/cyprus_seagulls.jpg" title="View the Full Size Image">
 					<img src="images/cyprus/cyprus_seagulls_s.jpg" alt="Seagulls in Cyprus"/></a>
-					<br />Seagulls in Lady's Mile,<br />January, 2014.
+					<br />Seagulls in Lady's Mile,<br />January, 2014
 				</div>
 				<div class="photo_cell"><a href="images/cyprus/akamas.jpg" title="View the Full Size Image">
 					<img src="images/cyprus/akamas_s.jpg" alt="Akamas, Cyprus"/></a>
-					<br />Narrow place <br />deep down the cliff in Akamas.
+					<br />Narrow place <br />deep down the cliff in Akamas
 				</div>						
 			</div>
 		</article>
-			<p style="text-align:right"><a href="#top" title="Go to Top of Page"><img src="back2top.gif" style="border: none" alt="top of page button" /></a></p>
-			
+
 		<article id="belarus">
 			<h2>Vacations in Belarus</h2>
 			<p>I am half-belorussian, thanks to my mom. She was born in the city of Baranovichi in Brest region of Belorussian SSR, 
@@ -143,34 +160,48 @@
 					<br/>Minsk has many lawn clocks, <br />and they work!
 				</div>
 				<div class="photo_cell"><a href="images/belarus/minsk_sculp.jpg" title="View the Full Size Image"><img src="images/belarus/minsk_sculp_s.jpg" alt="Sculpture in Minsk" /></a>
-					<br/>Plenty of sculptures, representing <br />characters from the national literature. 
+					<br/>Plenty of sculptures, representing <br />characters from the national literature
 				</div>
+            </div><br/>
+            <div class="photos_table" >
 				<div class="photo_cell"><a href="images/belarus/mir.jpg" title="View the Full Size Image"><img src="images/belarus/mir_s.jpg" alt="Mirsky Castle, Mir, Belarus"/></a>
-					<br />The Mirsky Castle, one of<br />UNESCO World Heritage sites.
+					<br />The Mirsky Castle, one of<br />UNESCO World Heritage sites
 				</div>
 				<div class="photo_cell"><a href="images/belarus/baranovichi.jpg" title="View the Full Size Image"><img src="images/belarus/baranovichi_s.jpg" alt="Baranovichi, Belarus" /></a>
-					<br/>Baranovichi, <br/>my mom's hometown.
+					<br/>Baranovichi, <br/>my mom's hometown
 				</div>
 			</div>
 		</article>
-			<p style="text-align:right"><a href="#top" title="Go to Top of Page"><img src="back2top.gif" style="border: none" alt="top of page button" /></a></p>
-	
+
 		<article id="ural">
 			<h2>Life in Europe-Asia Border</h2>
-			<p><a href="images/ural/obelisk_EA.jpg" title="View the Full Size Image"><img class="intro" src="images/ural/obelisk_EA_s.jpg" alt="Obelisk Europe-Asia" /></a>Geographical border between Europe and Asia is carried out
-			by dividing ridges of the Ural Mountains. The nearest "Europe-Asia" obelisk is located only three hours of driving away from my home city Chelyabinsk,
+			<figure class="intro"><a href="images/ural/obelisk_EA.jpg" title="View the Full Size Image">
+			    <img class="intro" src="images/ural/obelisk_EA_s.jpg" alt="Obelisk Europe-Asia" /></a></figure>
+            <p>Geographical border between Europe and Asia is formed by the Ural Mountains.
+            One of the "Europe-Asia" obelisks is located only three hours of driving away from my home city Chelyabinsk,
 			near Zlatoust town.</p>
 			<p>Chelyabinsk oblast has a very diverse landscape formed over millions of years. There are various areas - from the lowlands 
 			and hilly plains to mountain ranges. The region is also known as "land of lakes" since its territory has more than three thousand lakes.</p>
-			<p>When I lived home, in Urals, I sometimes spent my weekends hiking with interesting people many of whom became my friends. 
+			<p>When I lived in Southern Ural, I sometimes spent weekends hiking with interesting people many of whom became my friends.
 			In hot summer days, there was nothing better than swimming in a lake. The nature of my homeland is incredible!</p>
 			<h3>Samples of my photo collection from my home Urals.</h3>
 			<p><i>Click on any picture to see it in full size.</i></p>
 			<div class="photos_table" >
 				<div class="photo_cell"><a href="images/ural/chel.jpg" title="View the Full Size Image">
 					<img src="images/ural/chel_s.jpg" alt="Chelyabinsk city, South Urals" /></a>
-					<br/>In my home city <br/>Chelyabinsk, 2014. 
+					<br/>In my home city <br/>Chelyabinsk, 2014
 				</div>
+                <div class="photo_cell"><a href="images/ural/miners.jpg" title="View the Full Size Image">
+					<img src="images/ural/miners_s.jpg" alt="Memorial to gold mine workers in Plast town, Chelyabinsk region"></a>
+					<br />Memorial to golden mine workers<br/>in Plast town, Chelyabinsk region
+				</div>
+				<div class="photo_cell"><a href="images/ural/sugomak_cave.jpg" title="View the Full Size Image">
+					<img src="images/ural/sugomak_cave_s.jpg" alt="Sugomak Cave" /></a>
+					<br/>Inside Sugomak Cave,<br/>Southern Ural, 2008
+				</div>
+			</div>
+				<br/>
+			<div class="photos_table" >
 				<div class="photo_cell"><a href="images/ural/taganay.jpg" title="View the Full Size Image">
 					<img src="images/ural/taganay_s.jpg" alt="Taganay National Park, Chelyabinsk region"></a>
 					<br />Taganay National Park,<br/>Chelyabinsk region, 2009
@@ -178,18 +209,11 @@
 				<div class="photo_cell colspan"><a href="images/ural/taganay_top.jpg" title="View the Full Size Image">
 					<img src="images/ural/taganay_top_s.jpg" alt="Taganay National Park, Chelyabinsk region"></a>
 					<br/>Hiking in Taganay, 2009.
-				</div>
-			</div>
+		        </div>
+            </div>
 				<br/>
 			<div class="photos_table" >
-				<div class="photo_cell"><a href="images/ural/miners.jpg" title="View the Full Size Image">
-					<img src="images/ural/miners_s.jpg" alt="Memorial to gold mine workers in Plast town, Chelyabinsk region"></a>
-					<br />Memorial to golden mine workers<br/>in Plast town, Chelyabinsk region.
-				</div>
-				<div class="photo_cell"><a href="images/ural/sugomak_cave.jpg" title="View the Full Size Image">
-					<img src="images/ural/sugomak_cave_s.jpg" alt="Sugomak Cave" /></a>
-					<br/>Inside Sugomak Cave,<br/>Southern Ural, 2008. 
-				</div>
+
 				<div class="photo_cell"><a href="images/ural/verhoturie.jpg" title="View the Full Size Image">
 					<img src="images/ural/verhoturie_s.jpg" alt="Monastery in Verhoturie village, Sverdlovsk region"></a>
 					<br/>Monastery in Verhoturie village,<br/>Sverdlovsk region.
@@ -218,15 +242,14 @@
 			</div>
 			
 		</article>
-		<p style="text-align:right"><a href="#top" title="Go to Top of Page"><img src="back2top.gif" style="border: none" alt="top of page button" /></a></p>
-		
+
 		<article id="meteorite">
 			<h2>Meteorite in My City</h2>
 
-					<div class="intro"><a href="images/andreas_meteorite.jpg" title="Chelyabinsk Meteorite Piece in the Museum">
+					<figure class="intro"><a href="images/andreas_meteorite.jpg" title="Chelyabinsk Meteorite Piece in the Museum">
 						<img src="images/andreas_meteorite_s.jpg" alt="Chelyabinsk Meteorite Piece in the Museum" /></a>
-						<br />My husband and the meteorite <br />piece in Chelyabinsk <br />Local History Museum. 
-					</div>
+						<figcaption>My husband and the meteorite <br />piece in Chelyabinsk <br />Local History Museum.</figcaption>
+					</figure>
 					<p>In the morning of February 15, 2013, in Chelyabinsk city, Russia, we had a guest from the space, the real meteorite! About 9 a.m., people were
 				starting their work day, and I was also going to leave my apartment. While I was getting ready, I notice the strange bright light,
 				which was not similar to neither car beams nor anything else I could think of. The light turned into bright red, orange, yellow,
@@ -241,11 +264,10 @@
 			<blockquote> Chelyabinsk romantics are so severe that when they promise their women<br/>to get the moon and the stars for the Valentine's Day, 
 			they do it!</blockquote>
 		</article>
-			<p style="text-align:right"><a href="#top" title="Go to Top of Page"><img src="back2top.gif" style="border: none" alt="top of page button" /></a></p>
-		
+
 		<article id="dance">
 			<h2>Dance and Fitness</h2>
-			<p><img class="intro" src="images/fitness/shpag_1.jpg" alt="Stretching in Gym" />
+			<figure class="intro"><img class="intro" src="images/fitness/shpag_1.jpg" alt="Stretching in Gym" /></figure>
 				<!--When I lived in Russia, I worked full-time, and every other evening
 				I spent dancing in the fitness club next to my house.</p>           -->
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
@@ -278,7 +300,6 @@
             </div>
             </div>
 		</article>
-			<p style="text-align:right"><a href="#top" title="Go to Top of Page"><img src="back2top.gif" style="border: none" alt="top of page button" /></a></p>
 
 	</main>
 	

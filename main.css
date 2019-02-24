@@ -56,9 +56,15 @@ footer {
 
 /*main*/
 article {
-      background-color: white;
-    border: 4px ridge white;
+      background-color: #eee;
+    /*border: 4px ridge white;  */
 		border-radius: 10px;
+		box-shadow: 3px 3px 5px gray; /* tried to make a 3D-effect for the menu bar */
+  }
+section#hobby {
+
+  background-color: beige;
+
 		box-shadow: 3px 3px 5px gray; /* tried to make a 3D-effect for the menu bar */
   }
 
@@ -66,7 +72,7 @@ article {
 
 h1, h2, h3 {
 	color: maroon;
-
+    margin-bottom: 0; padding-bottom: 0;
 	/*font-family: 'Alex Brush', Arial, Verdana, sans-serif; */
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
@@ -78,13 +84,33 @@ h1 {
     margin-top: -200px;
     margin-bottom: 200px;
 }
-h2 {
-		font-size: 130%;
-        text-align: center;
+h2 { font-size: 130%; }
+
+article h2 {
+    display: block;
+
+    text-align: center;
+    margin: 20px;
+    border-bottom: 1px solid gray;
 }
+
+/*article h2 {
+
+    /*background:    #9A7469;/*#A52A2A;   */
+    /*background-image: linear-gradient(to right, #eee, #A52A2A,#eee);       */
+    /*color: white;
+    border-radius: inherit;
+    box-shadow:inherit;
+} */
+
 h3 {
-		font-size: 105%;
+		font-size: 115%;
 		color: brown;
+        margin: 2em;
+}
+h4 {
+     color: #A52A2A;
+
 }
 
 a {
@@ -95,11 +121,15 @@ a {
 article a {
     border-bottom: 1px dotted maroon;
  }
-  a:hover {
-		opacity: 0.3;
+a:hover {
+		opacity: 0.3;  text-decoration: none;
 }
+
 ul, ol {
 		line-height: 1.8em;	/* made items easier to read */
+}
+#hobby ul {
+    margin: 0;
 }
 
 /* Adventures page */
@@ -173,18 +203,18 @@ p.period {
 .dashboard-item img {
     width: 300px;
     height: 250px;
-    vertical-align: middle;
+    vertical-align: top;
     object-fit: cover;/*none; /*cover; /*contain; */     /*scale-down; */
         overflow: hidden;
 }
 .adventures .dashboard-item img {
     width: 230px;
-	object-fit: none;
+	object-fit: contain;
 }
 div.icons {
 	height: 60px;
     /*auto; margin-right: auto;*/
-    margin-top: -50px;
+    margin-top: 0px;
     padding-top: 0;
     margin-bottom: 10px;
 }

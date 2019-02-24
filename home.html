@@ -6,9 +6,27 @@
 			Class: CIS-72A 42735
 			Instructor: Scott McLeod
 	-->
-	<meta charset="utf-8">
+	<meta charset="utf-8"/>
+    <!--Bootstrap 3 is designed to be responsive to mobile devices. Mobile-first styles are part of the core framework.
+        To ensure proper rendering and touch zooming, add the following <meta> tag inside the <head> element:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit=no"/>
 	<title>Maria Gregory's World</title>
-	<link type="text/css" rel="stylesheet" href="layout.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+    The initial-scale=1 part sets the initial zoom level when the page is first loaded by the browser.          -->
+
+    <link type="text/css" rel="stylesheet" href="layout.css" />
 	<link type="text/css" rel="stylesheet" href="main.css" />
 </head>
 <body id="home">
@@ -28,50 +46,48 @@
             <div id="nav_links"><a href="mylinks.htm" title="Links">Links</a></div>
 		    <div id="nav_feed"><a href="contact.html" title="Feedback">Contact</a></div>
         </div>
-		
+
 	</nav>
 
 	<main>
 
 	    <h1>Home</h1>
-        <h2>Welcome to my first "pancake" web site!</h2>
-        <article>
+        <article id="about">
+            <h2 class="welcome">Welcome to my first "pancake" web site!</h2>
+            <figure class="home-pic">
+    			<!--<img id="bicycle" src="bicycle.jpg" alt="Bycicle in Catalina Island" /><br/>
+    				Bicycle Ride in Catalina Island,<br/>CA. November 2015<br /><br />-->
+    			<img src="snow.jpg" alt="Snowy weather in Chlyabinsk" /><br />
+    				<figcaption>Snowy Day in Chelyabinsk, <br />South Ural, Russia. April 2014</figcaption>
+    		</figure>
 
-        <figure class="home-pic">
-			<!--<img id="bicycle" src="bicycle.jpg" alt="Bycicle in Catalina Island" /><br/>
-				Bicycle Ride in Catalina Island,<br/>CA. November 2015<br /><br />-->
-			<img src="snow.jpg" alt="Snowy weather in Chlyabinsk" /><br />
-				<figcaption>Snowy Day in Chelyabinsk, <br />South Ural, Russia. April 2014</figcaption>
-		</figure>
-		<div class="about">
-			<p>My name is Maria, and this site is to introduce myself and my key interests. Hope you find something interesting for you here.
-			</p>
-			<p>I am from Chelyabinsk, Russia. I have been living in Inland Empire in Southern California since 2015.
-			I am studying computer applications and diagnostic medical technology because I cannot decide which path is better; I like both. </p>
-			<p>Apart from those things, I like foreign languages. My native is Russian, and I'm also fluent in English, know some Greek, and have basic knowledge of Spanish.
-             I enjoy learning about different cultures, and foreign languages make big part of my interests.</p>
-			<p id="photo_desc"><!--Photos on the right illustrate my lifestyle. The upper one is made in Catalina Island, California, when my spouse and I rented a two-seat bicycle and drove around Avalon, the only town on the island.
-			The second photo (the lower one)--> The photo on the right is taken in April 2014 when all of a sudden, in a middle of the blossoming spring,
-			snow attacked us! No secret that the weather in Ural is unpredictable, and there is almost nothing in the nature that can really shock us. 
-			Not even <a href="myadventures.html#meteorite" title="Chelyabinsk Meteorite">falling meteorites!</a></p>
+    			<p>My name is Maria, and this site is to introduce myself and my key interests. Hope you find something interesting for you here.
+    			</p>
+    			<p>I am from Chelyabinsk, Russia. I have been living in Inland Empire in Southern California since 2015.
+    			I am studying computer applications and diagnostic medical technology because I cannot decide which path is better; I like both. </p>
+    			<p>Apart from those things, I like foreign languages. My native is Russian, and I'm also fluent in English, know some Greek, and have basic knowledge of Spanish.
+                 I enjoy learning about different cultures, and foreign languages make big part of my interests.</p>
+    			<p id="photo_desc"><!--Photos on the right illustrate my lifestyle. The upper one is made in Catalina Island, California, when my spouse and I rented a two-seat bicycle and drove around Avalon, the only town on the island.
+    			The second photo (the lower one)--> The photo on the right is taken in April 2014 when all of a sudden, in a middle of the blossoming spring,
+    			snow attacked us! No secret that the weather in Ural is unpredictable, and there is almost nothing in the nature that can really shock us.
+    			Not even <a href="myadventures.html#meteorite" title="Chelyabinsk Meteorite">falling meteorites!</a></p>
 
 
-            <section>
-            <h3>My hobbies and activities:</h3>
-			<ul>
-				<li>Hiking (easy to moderate)</li>
-				<li><a href="myadventures.html#dance">Dancing</a> Zumba</li>
-				<li>Learning <a href="mylinks.htm#languages">Languages</a></li>
-				<li>Reading and watching Detective stories</li>
-                <li>Wild Life Documentaries and animals, especially cute and furry ones</li>
-				<li><a href="mylinks.htm#fav">Coding</a>, especially when it works.</li>
-			</ul>
-            </section>
+                <section id="hobby">
+                <h3>My hobbies and activities:</h3>
+    			<ul>
+    				<li>Hiking (easy to moderate)</li>
+    				<li><a href="myadventures.html#dance">Dancing</a> Zumba</li>
+    				<li>Learning <a href="mylinks.htm#languages">Languages</a></li>
+    				<li>Reading and watching Detective stories</li>
+                    <li>Wild Life Documentaries and animals, especially cute and furry ones</li>
+    				<li><a href="mylinks.htm#fav">Coding</a>, especially when it works.</li>
+    			</ul>
+                </section>
 			
-		</div>
+
           </article>
-		  <p style="text-align:right"><a href="#top" title="Go to Top of Page"><img src="back2top.gif" style="border: none" alt="top of page button" /></a></p>
-	</main>
+  </main>
 
 	<footer> 
 	    <div class="icons">

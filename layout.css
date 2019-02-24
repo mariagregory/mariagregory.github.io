@@ -1,5 +1,5 @@
 /*
-			CSS for Final Project Layout by Mariia Gregory
+			CSS for Final Project Layout by Maria Gregory
 			Class: CIS-72A 42735 
 			Instructor: Scott McLeod
 */
@@ -8,7 +8,7 @@ body {
 		margin: 0 auto;
 }
 header {
-	margin-top: 50px;
+	margin-top: 50px; margin-bottom: 0;
 	height: 350px;
 	overflow: hidden;
 	background: url('logo_catalina.jpg') no-repeat;
@@ -17,12 +17,12 @@ header {
 main {                                                                         
     margin: 50px;
 	margin-top: 0;
-    padding: 0;
+    padding-top: -50px;
    }
 
-nav {
+nav {                  /* MENU */
 	display: table;
-	position: absolute; /* to header*/
+	position: absolute;
 	top: 10px; right: 0;
 	border-spacing: 10px;
 }
@@ -37,20 +37,32 @@ nav .nav-row {
 }
 
 article {
-       margin: 50px;	margin-top: 0;
-       padding: 5px 20px 25px 20px;
-   }
-#contact main article {
-    width: 50%;
+    width: 70%;
+    margin-left: 50px; margin-right: 50px;
+        margin-bottom: 50px;
+       padding: 5px 100px 25px 20px;
+}
+h1 + article {
+    margin-top: -60px;
 }
 
-footer {
-		margin-bottom: 30px; /* so that the footer text doesn't stick to the bottom of the screen */
-		clear: both;
+article#about {
+    width: auto;
+    padding-right: 0;
+    margin-right: 360px; /* left a space on the right for my side pictures in "Home" page */
+
 }
-div.about {
-		margin-right: 360px; /* left a space on the right for my side pictures in "Home" page */
-		margin-top: 30px;
+
+section#hobby  {
+    position: absolute;
+    display: block;
+    width: 300px;
+    top: 550px; right: 20px;
+    padding: 20px;
+ }
+
+#contact main article {
+    width: 50%;
 }
 
 figure.home-pic {
@@ -59,23 +71,21 @@ figure.home-pic {
 		margin-top: 5%;
 		width: 355px; /* the field width for the right-side pictures in "Home" page */
 }
+figure.intro {    /* in Adventures */
+    float: left;
+}
 figcaption {
 	text-align: center;
 }
+
+
 main.adventures h3,
 main.adventures h3 + p {
 		clear: both;
 }
-article .intro {
-		float: left; /* placed an image to the left from a main text */
-		margin-right: 10px;
-		margin-bottom: 4px; /* so the text below doesn't stick to an image */
-}
-dd {
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
 
+
+   /* in Adventures */
 .photos_table {
 		display: table; /* alternative representation for table-looking elements */
 		width: 95%; /* to separate visually the last picture in a row from the "Top of Page" icon */
@@ -108,8 +118,10 @@ div.colspan {
 		width: 370px;
 		height: 275px;
 }
-.LI-profile-badge {
-float: right;
+/* in Resume */
+.LI-profile-badge {          /*LinkedIn badge*/
+    float: right;
+
 }
 
 table#contact {
@@ -124,9 +136,19 @@ h2 ~ *,
 h3 ~ * {
     margin-left: 50px;
 }
+
 .period {
     margin-left: 0;
 }
 h2 + ol {
     margin-left: 30px;
+}
+dd {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+footer {
+		margin: 30px; /* so that the footer text doesn't stick to the bottom of the screen */
+		clear: both;
 }
