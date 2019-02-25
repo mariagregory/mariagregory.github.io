@@ -7,25 +7,25 @@
 			Instructor: Scott McLeod
 	-->
 	<meta charset="utf-8">
-
+    <!--include the X-UA-Compatible meta tag with edge mode, which tells the IE to display the webpage in the highest mode available.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--Bootstrap 3 is designed to be responsive to mobile devices. Mobile-first styles are part of the core framework.
         To ensure proper rendering and touch zooming, add the following <meta> tag inside the <head> element:-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>Maria Gregory's Adventures</title>
+                         <!-- Bootstrap CSS -->
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <!-- The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
-
-    The initial-scale=1 part sets the initial zoom level when the page is first loaded by the browser.          -->
-
-	<link type="text/css" rel="stylesheet" href="layout.css" />
+     <!-- My CSS, overriding bootstrap -->
+     <link type="text/css" rel="stylesheet" href="layout.css" />
 	<link type="text/css" rel="stylesheet" href="main.css" />
+
+    
+        <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 </head> 
 <body id="adv">
 	<header>
@@ -266,43 +266,46 @@
 		</article>
 
 		<article id="dance">
-			<h2>Dance and Fitness</h2>
+			  <!--          <details>
+                <summary>-->
+                <h2>Dance and Fitness</h2>  <!-- </summary> -->
 			<figure class="intro"><img class="intro" src="images/fitness/shpag_1.jpg" alt="Stretching in Gym" /></figure>
 				<!--When I lived in Russia, I worked full-time, and every other evening
 				I spent dancing in the fitness club next to my house.</p>           -->
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 Donec accumsan risus cursus augue. In metus tortor, aliquet quis, commodo ut, pharetra vel, diam.
 
-			<h3>Couple of Videos of Me Dancing</h3>				
-			<div class="videos">
-			    <div class="video-row">
-				<div class="video">
-                <iframe src="https://vk.com/video_ext.php?oid=25546360&id=159763518&hash=fc0e050d22624e30" frameborder="0" allowfullscreen></iframe>
-					<br />The video above was made in Spring 2011.<br />
-					The girl in the center (on the video, the left one) is an instructor, <br />and all others are simply fitness-club members.<br />
-					I am the right one in the second row.
-				</div>
-				<div class="video">
-					<iframe src="http://vk.com/video_ext.php?oid=25546360&id=146664991&hash=0eebc4995f6b2ddf" ></iframe>
-					<br />This is another video, made in June 2010 <br />in a front of "Traktor" arena, Chelyabinsk, Russia.<br />
-					I am the left one in the second row.<br/><i>Source: VK.com</i>
-				</div>
+                <h3>Couple of Videos of Me Dancing</h3>
+    			<div class="videos">
+    			    <div class="video-row">
+        				<div class="video">
+                        <iframe src="https://vk.com/video_ext.php?oid=25546360&id=159763518&hash=fc0e050d22624e30" frameborder="0" allowfullscreen></iframe>
+        					<br />The video above was made in Spring 2011.<br />
+        					The girl in the center (on the video, the left one) is an instructor, <br />and all others are simply fitness-club members.<br />
+        					I am the right one in the second row.
+        				</div>
+        				<div class="video">
+        					<iframe src="http://vk.com/video_ext.php?oid=25546360&id=146664991&hash=0eebc4995f6b2ddf" ></iframe>
+        					<br />This is another video, made in June 2010 <br />in a front of "Traktor" arena, Chelyabinsk, Russia.<br />
+        					I am the left one in the second row.<br/><i>Source: VK.com</i>
+        				</div>
+                    </div>
+                    <div class="video-row">
+                        <div class="video">
+        					<iframe src="https://www.youtube.com/embed/JN2mCT_c7Mo?list=PLe2XFYx6fJuj0x_Y_w0tBt2Zu_lJyzrA1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        					<br />....<br/>
+            			</div>
+                        <div class="video">
+                        <iframe src="https://www.youtube.com/embed/vlHhWdfszeA?list=PLe2XFYx6fJuj0x_Y_w0tBt2Zu_lJyzrA1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                               <br />....<br/>
+                        </div>
+                    </div>
                 </div>
-                <div class="video-row">
-                <div class="video">
-					<iframe src="https://www.youtube.com/embed/JN2mCT_c7Mo?list=PLe2XFYx6fJuj0x_Y_w0tBt2Zu_lJyzrA1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					<br />....<br/>
-			</div>
-            <div class="video">
-            <iframe src="https://www.youtube.com/embed/vlHhWdfszeA?list=PLe2XFYx6fJuj0x_Y_w0tBt2Zu_lJyzrA1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                   <br />....<br/>
-            </div>
-            </div>
-            </div>
+            <!--</details>-->
 		</article>
 
 	</main>
-	
+
 <footer>
     <div class="icons">
         <a href="https://www.facebook.com/fitnessmary/" class="fa fa-facebook"></a>
@@ -327,5 +330,25 @@
                 }
             }
      </script>
+
+     <!-- BOOTSTRAP  -->   <!--https://getbootstrap.com/docs/4.3/content/reboot/#approach-->
+     <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+    The initial-scale=1 part sets the initial zoom level when the page is first loaded by the browser.          -->
+
+    <!-- Custom styles for this template -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--отвечает за обратную валидность, то есть — это костыли для старых версий ИЕ. Просто вставьте его и забудьте.-->
 </body> 
 </html>

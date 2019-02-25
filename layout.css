@@ -4,7 +4,7 @@
 			Instructor: Scott McLeod
 */
 body {
-		max-width: 1280px;
+  /* max-width: 1280px;      */
 		margin: 0 auto;
 }
 header {
@@ -32,7 +32,7 @@ nav .nav-row {
 }
 .nav-row div {
     display: table-cell;
-	width: 13%;
+ width: 13%;
     /*padding: 1px;*/
 }
 
@@ -49,30 +49,31 @@ h1 + article {
 article#about {
     width: auto;
     padding-right: 0;
-    margin-right: 360px; /* left a space on the right for my side pictures in "Home" page */
+    /*margin-right: 360px; /* left a space on the right for my side pictures in "Home" page */
 
 }
 
 section#hobby  {
-    position: absolute;
+    /*position: absolute;*/
     display: block;
     width: 300px;
-    top: 550px; right: 20px;
-    padding: 20px;
+    /*top: 550px; right: 20px; */
+    padding: 1em;  padding-top: 0;    
+    vertical-align: middle;
  }
 
 #contact main article {
     width: 50%;
 }
 
-figure.home-pic {
-		float: right;
+/*figure.home-pic {
+	   	float: right;
 		margin-right: 0;
 		margin-top: 5%;
-		width: 355px; /* the field width for the right-side pictures in "Home" page */
-}
+  width: 355px; /* the field width for the right-side pictures in "Home" page
+}                                                                              */
 figure.intro {    /* in Adventures */
-    float: left;
+    float: left; margin-right: 1em;
 }
 figcaption {
 	text-align: center;
@@ -88,7 +89,6 @@ main.adventures h3 + p {
    /* in Adventures */
 .photos_table {
 		display: table; /* alternative representation for table-looking elements */
-		width: 95%; /* to separate visually the last picture in a row from the "Top of Page" icon */
 }
 .photo_cell {
 		display: table-cell;
@@ -105,7 +105,7 @@ div.colspan {
 .videos {
 		/* so that the videos on "My Adventure" page are aligned in a row */
 		display: table;
-		width: 95%;
+	 width: 95%;
 		margin-top: 10px;
 }
 
@@ -115,7 +115,7 @@ div.colspan {
 
 .video {
 		display: table-cell;
-		width: 370px;
+	   /*dth: 370px;  */
 		height: 275px;
 }
 /* in Resume */
@@ -134,7 +134,7 @@ table#contact td {
 
 h2 ~ *,
 h3 ~ * {
-    margin-left: 50px;
+    margin-left: 2em;
 }
 
 .period {
@@ -148,7 +148,7 @@ dd {
     margin-bottom: 10px;
 }
 img#outoforder {
-    width: 200px;
+    width: 300px;
     display: block;
     margin-left: auto; margin-right: auto;
 }

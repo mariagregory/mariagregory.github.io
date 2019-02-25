@@ -63,9 +63,13 @@ article {
   }
 section#hobby {
 
-  background-color: beige;
-
-		box-shadow: 3px 3px 5px gray; /* tried to make a 3D-effect for the menu bar */
+  background-color: inherit;
+  border-radius: inherit;
+		box-shadow: inherit; /* tried to make a 3D-effect for the menu bar */
+  }
+  section#hobby ul li {
+      line-height: 1.5em;
+      margin: 1em;
   }
 
 /* Text styles */
@@ -104,13 +108,13 @@ article h2 {
 } */
 
 h3 {
-		font-size: 115%;
+		font-size: 120%;
 		color: brown;
-        margin: 2em;
+        margin: 2rem;
 }
 h4 {
      color: #A52A2A;
-
+     font-size: 110%;
 }
 
 a {
@@ -126,7 +130,7 @@ a:hover {
 }
 
 ul, ol {
-		line-height: 1.8em;	/* made items easier to read */
+		line-height: 1.8rem;	/* made items easier to read */
 }
 #hobby ul {
     margin: 0;
@@ -157,7 +161,7 @@ div.pictures {
 }
 blockquote {
 	font-style: italic;
-	font-size: 1.1em;
+	font-size: 1.1rem;
 }
 .videos {
 		text-align: center;
