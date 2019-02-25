@@ -9,7 +9,7 @@
 	<meta charset="utf-8"/>
         <!--Bootstrap 3 is designed to be responsive to mobile devices. Mobile-first styles are part of the core framework.
         To ensure proper rendering and touch zooming, add the following <meta> tag inside the <head> element:-->
-    <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit=no"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit=no"/>
 	<title>Contact</title>
 
                  <!-- Bootstrap CSS -->
@@ -43,73 +43,79 @@
 	</nav>
 	<main>
 		<h1>Contact</h1>
-        <div class="icons" style="margin-left: auto; margin-right: auto;">
-			<a href="mailto:gregorymaria83@gmail.com" class="fa fa-gmail"></a>                 <br/>
-			<a href="https://www.linkedin.com/in/mariagregory/" class="fa fa-linkedin"></a>    <br/>
-			<a href="https://github.com/uralmasha/" class="fa fa-github"></a>         <br/>
-            <a href="https://www.facebook.com/fitnessmary/" class="fa fa-facebook"></a> <br/>
-            <a href="https://vk.com/gabitovamf" class="fa fa-vk"></a>
-		</div>
 
-        <p><span class="note">Sorry, this form is not functional yet!<br/>
-			You can still play with fields and buttons, but nothing will happen.</span></p>
 
-        <article>
-            <!---->
-			<p>I welcome all feedback, positive or negative. So feel free to send your comments; it will help to keep me informed.
-			I promise to monitor and respond to all feedback in a timely manner.
-			</p>
+        <div class="row">
+            <div class="col-sm-7">
+                <p><span class="note">Sorry, this form is not functional yet!<br/>
+    			You can still play with fields and buttons, but nothing will happen.</span></p>
+                <article>
+                    <!---->
+        			<p>I welcome all feedback, positive or negative. So feel free to send your comments; it will help to keep me informed.
+        			I promise to monitor and respond to all feedback in a timely manner.
+        			</p>
 
-			<!--FORM-->
-			<form id="feedback" action=" /mail.php" method="post"> <!--"contactresponse.htm"-->
-                <!--Use <fieldset> with <legend> inside for a nice looking border-->
+        			<!--FORM-->
+        			<form id="feedback" action=" /mail.php" method="post"> <!--"contactresponse.htm"-->
+                        <!--Use <fieldset> with <legend> inside for a nice looking border-->
 
-                <img id="outoforder" src="http://clipart-library.com/img/1696287.png" alt="Form out of order" style="width: 200px;"/>
+                        <img id="outoforder" src="http://clipart-library.com/img/1696287.png" alt="Form out of order" style="width: 200px;"/>
 
-                <!--HIDDEN FIELDS-->
+                        <!--HIDDEN FIELDS-->
 
-                <input type="hidden" name="admin_email" value="gregorymaria83@gmail.com"/>
-                <input type="hidden" name="project_name" value="Uralmasha on Github"/>
-                <input type="hidden" name="form_subject" value="Message from Uralmasha"/>
-                <!--END OF HIDDEN FIELDS-->
+                        <input type="hidden" name="admin_email" value="gregorymaria83@gmail.com"/>
+                        <input type="hidden" name="project_name" value="Uralmasha on Github"/>
+                        <input type="hidden" name="form_subject" value="Message from Uralmasha"/>
+                        <!--END OF HIDDEN FIELDS-->
 
-				<p><label for="name">Name:</label><br />
-				<input type="text" name="name" id="name" size="30" /></p>
-				<p><label for="email">E-mail:</label><br />
-				<input type="text" name="email" size="30" /></p>
+        				<p><label for="name">Name:</label><br />
+        				<input type="text" name="name" id="name" size="30" /></p>
+        				<p><label for="email">E-mail:</label><br />
+        				<input type="text" name="email" size="30" /></p>
 
-				<p>
-				<label for="re">Feedback regarding:</label> <span class="note" style="color: gray;">(Choose any; it doesn't matter really)</span><br/>
-				<select name="re" id="re">
-					<option value="design">Web site design</option>
-					<option value="content">Web site content</option>
-					<option value="problem">Web site problem</option>
-					<option value="personal">Personal issue</option>
-					<option value="other">Other</option>
-				</select>
-				</p>
-			
-				<p><label for="feeling">Overall feeling:</label><br />
-				<input type="radio" name="feeling" value="satisfied" />Satisfied &nbsp;&nbsp;&nbsp;&nbsp;
-				<input type="radio" name="feeling" value="neutral" />Neutral &nbsp;&nbsp;&nbsp;&nbsp;
-				<input type="radio" name="feeling" value="unsatisfied" />Unsatisfied
-				</p>
-				
-				<p><label for="comments">Your comments:</label><br/>
-				<textarea name="comments" rows="4" cols="30"></textarea>
-				</p>
-				
-				<p><label for="recommend">I would recomment this site to others:</label><br />
-				<input type="checkbox" value="yes" name="recommend" />
-				</p>
-				
-				<p>
-				<button name="send" value="Send Feedback" >Send Feedback</button><!--<input type="submit" name="send" value="Send Feedback" />-->&nbsp;&nbsp;&nbsp;
-                <!--Or <button> instead of <input type="submit">-->
-				<input type="reset" name="cancel" value="Clear Feedback" />
-				</p>
-			</form>
-		</article>
+        				<p>
+        				<label for="re">Feedback regarding:</label> <span class="note" style="color: gray;">(Choose any; it doesn't matter really)</span><br/>
+        				<select name="re" id="re">
+        					<option value="design">Web site design</option>
+        					<option value="content">Web site content</option>
+        					<option value="problem">Web site problem</option>
+        					<option value="personal">Personal issue</option>
+        					<option value="other">Other</option>
+        				</select>
+        				</p>
+
+        				<p><label for="feeling">Overall feeling:</label><br />
+        				<input type="radio" name="feeling" value="satisfied" />Satisfied &nbsp;&nbsp;&nbsp;&nbsp;
+        				<input type="radio" name="feeling" value="neutral" />Neutral &nbsp;&nbsp;&nbsp;&nbsp;
+        				<input type="radio" name="feeling" value="unsatisfied" />Unsatisfied
+        				</p>
+
+        				<p><label for="comments">Your comments:</label><br/>
+        				<textarea name="comments" rows="4" cols="30"></textarea>
+        				</p>
+
+        				<p><label for="recommend">I would recomment this site to others:</label><br />
+        				<input type="checkbox" value="yes" name="recommend" />
+        				</p>
+
+        				<p>
+        				<button name="send" value="Send Feedback" >Send Feedback</button><!--<input type="submit" name="send" value="Send Feedback" />-->&nbsp;&nbsp;&nbsp;
+                        <!--Or <button> instead of <input type="submit">-->
+        				<input type="reset" name="cancel" value="Clear Feedback" />
+        				</p>
+        			</form>
+        		</article>
+            </div>
+            <div class="col-sm-5">
+                <div class="icons" style="margin-left: auto; margin-right: auto;">
+        			<a href="mailto:gregorymaria83@gmail.com" class="fa fa-gmail"></a>                 <br/>
+        			<a href="https://www.linkedin.com/in/mariagregory/" class="fa fa-linkedin"></a>    <br/>
+        			<a href="https://github.com/uralmasha/" class="fa fa-github"></a>         <br/>
+                    <a href="https://www.facebook.com/fitnessmary/" class="fa fa-facebook"></a> <br/>
+                    <a href="https://vk.com/gabitovamf" class="fa fa-vk"></a>
+        		</div>
+            </div>
+        </div>
 	</main>
 	<footer>
            <!-- Icons -->

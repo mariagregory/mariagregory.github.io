@@ -234,10 +234,9 @@ div.icons {
 } */
 
 #contact .icons {
-    position: absolute;
-    width: 250px;
-    top: 570px;
-    right: 100px;
+    display: block;
+    margin-top: 10em; width: 100%;
+    padding-left: 10%;/*em;/*auto; padding-right: auto;    */
 }
 
 #contact .fa {

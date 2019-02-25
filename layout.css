@@ -37,20 +37,19 @@ nav .nav-row {
 }
 
 article {
-    width: 70%;
-    margin-left: 50px; margin-right: 50px;
+
+    /*margin-left: 50px; margin-right: 50px;*/
         margin-bottom: 50px;
        padding: 5px 100px 25px 20px;
 }
 h1 + article {
-    margin-top: -60px;
+    /*margin-top: -60px;     */
 }
 
 article#about {
     width: auto;
     padding-right: 0;
     /*margin-right: 360px; /* left a space on the right for my side pictures in "Home" page */
-
 }
 
 section#hobby  {
@@ -58,20 +57,10 @@ section#hobby  {
     display: block;
     width: 300px;
     /*top: 550px; right: 20px; */
-    padding: 1em;  padding-top: 0;    
+    padding: 1em;  padding-top: 0;
     vertical-align: middle;
  }
-
-#contact main article {
-    width: 50%;
-}
-
-/*figure.home-pic {
-	   	float: right;
-		margin-right: 0;
-		margin-top: 5%;
-  width: 355px; /* the field width for the right-side pictures in "Home" page
-}                                                                              */
+                                                                             
 figure.intro {    /* in Adventures */
     float: left; margin-right: 1em;
 }
@@ -79,12 +68,10 @@ figcaption {
 	text-align: center;
 }
 
-
 main.adventures h3,
 main.adventures h3 + p {
 		clear: both;
 }
-
 
    /* in Adventures */
 .photos_table {
@@ -119,11 +106,6 @@ div.colspan {
 		height: 275px;
 }
 /* in Resume */
-.LI-profile-badge {          /*LinkedIn badge*/
-    float: right;
-
-}
-
 table#contact {
     margin: auto;
 }
