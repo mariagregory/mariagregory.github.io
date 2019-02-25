@@ -4,7 +4,7 @@
 			Instructor: Scott McLeod
 */
 body {
-  /* max-width: 1280px;      */
+   max-width: 1280px;
 		margin: 0 auto;
 }
 header {
@@ -60,7 +60,7 @@ section#hobby  {
     padding: 1em;  padding-top: 0;
     vertical-align: middle;
  }
-                                                                             
+
 figure.intro {    /* in Adventures */
     float: left; margin-right: 1em;
 }
