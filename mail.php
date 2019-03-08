@@ -2,26 +2,32 @@
 
 $method = $_SERVER['REQUEST_METHOD'];
 
-// Script Foreach
-$c = true;
-if ($method === 'post') {
+if ($method == 'post') {
+	
+	
+	echo 'Thanks for submitting the form.<br />';
+	echo  . $_POST['name'];
+	echo . '<br/>Your message was: ' . $_POST['comments'] . "<br/>";
+	
+}
+?>
 
-    $project_name = trim($_post["???????? ?????"]);
+ <!--   $project_name = trim($_post["???????? ?????"]);
     $admin_email = trim($_post["admin_email"]);
     $form_subject = trim($_post["???? ?????????"]);
 
-    foreach ( $_post as $key => $value ) {
+    // foreach ( $_post as $key => $value ) {
         // Skip the for hidden fields (input type="hidden") - don't show them in an email
-        if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject") {
-            $message .= "
-            " . ( ($c = !$c)) ?  '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
-            <td style='padding: 10px; border: #e9e9e9 11px solid;'><b>$key</b></td>
-            <td style='padding: 10px; border: #e9e9e9 11px solid;'>$value</td>
-            </tr>
-        ";   // the above code shapes a message as a table to show in the email
-    };
-    };
-}
+        // if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject") {
+            // $message .= "
+            // " . ( ($c = !$c)) ?  '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
+            // <td style='padding: 10px; border: #e9e9e9 11px solid;'><b>$key</b></td>
+            // <td style='padding: 10px; border: #e9e9e9 11px solid;'>$value</td>
+            // </tr>
+        // ";   // the above code shapes a message as a table to show in the email
+    // };
+    // };
+// }
 /*
 if(!empty($_post['name']) AND !empty($_post['email']) AND !empty($_post['comments'])) {
 	$headers = 'From : Maria \'Uralmasha\' Gregory'
@@ -40,4 +46,4 @@ if(!empty($_post['name']) AND !empty($_post['email']) AND !empty($_post['comment
 } else {
 	header('Location: /');
 }
-*/
+*/-->
