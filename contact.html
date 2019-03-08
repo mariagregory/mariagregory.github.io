@@ -16,12 +16,14 @@
     <!-- Latest compiled and minified CSS -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
+    <!-- Scripts are duplicated down there, before </body> but they're here to follow the examples
+     on https://www.tutorialrepublic.com/twitter-bootstrap-tutorial -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
      <!-- My CSS, overriding bootstrap -->
 	<link type="text/css" rel="stylesheet" href="layout.css" />
 	<link type="text/css" rel="stylesheet" href="main.css" />
-	<style> span.note { font-style: italic; color: darkred; } </style>
 
 
 
@@ -47,8 +49,9 @@
 
         <div class="row">
             <div class="col-sm-7">
-                <p><span class="note">Sorry, this form is not functional yet!<br/>
-    			You can still play with fields and buttons, but nothing will happen.</span></p>
+                <p class="text-danger text-center">Sorry, this form is not functional yet!<br/>
+    			You can still play with fields and buttons, but nothing will happen.</p>
+
                 <article>
                     <!---->
         			<p>I welcome all feedback, positive or negative. So feel free to send your comments; it will help to keep me informed.
@@ -56,7 +59,7 @@
         			</p>
 
         			<!--FORM-->
-        			<form id="feedback" action=" /mail.php" method="post"> <!--"contactresponse.htm"-->
+        			<form id="feedback" action="mailto:gregorymaria83@gmail.com" method="post"> <!--"contactresponse.htm"-->
                         <!--Use <fieldset> with <legend> inside for a nice looking border-->
 
                         <img id="outoforder" src="http://clipart-library.com/img/1696287.png" alt="Form out of order" style="width: 200px;"/>
@@ -74,7 +77,7 @@
         				<input type="text" name="email" size="30" /></p>
 
         				<p>
-        				<label for="re">Feedback regarding:</label> <span class="note" style="color: gray;">(Choose any; it doesn't matter really)</span><br/>
+        				<label for="re">Feedback regarding:</label> <span class="note text-muted">(Choose any; it doesn't matter really)</span><br/>
         				<select name="re" id="re">
         					<option value="design">Web site design</option>
         					<option value="content">Web site content</option>
@@ -94,15 +97,18 @@
         				<textarea name="comments" rows="4" cols="30"></textarea>
         				</p>
 
-        				<p><label for="recommend">I would recomment this site to others:</label><br />
-        				<input type="checkbox" value="yes" name="recommend" />
-        				</p>
+        				<p><input type="checkbox" value="yes" name="recommend" />
+                        <label for="recommend">I would recomment this site to others:</label>
+                        </p>
 
-        				<p>
-        				<button name="send" value="Send Feedback" >Send Feedback</button><!--<input type="submit" name="send" value="Send Feedback" />-->&nbsp;&nbsp;&nbsp;
-                        <!--Or <button> instead of <input type="submit">-->
-        				<input type="reset" name="cancel" value="Clear Feedback" />
-        				</p>
+                        <p>
+            				<button name="send" class="btn btn-primary" value="Send Feedback" >Send Feedback</button>
+                            <!--<input type="submit" name="send" value="Send Feedback" />-->
+                            <!--Or <button> instead of <input type="submit">-->
+                         </p> or<br/>
+                         <p>
+    				        <input type="reset" name="cancel" value="Clear Feedback" />
+                        </p>
         			</form>
         		</article>
             </div>
@@ -131,7 +137,5 @@
 		The site was initilly created as an assignment for <a href="http://www.faculty.rcc.edu/mcleod/html/" target="blank" title="The source will open in a new tab">Scott McLeod</a>'s class
 		</div>
 	</footer>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1-11.3.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
