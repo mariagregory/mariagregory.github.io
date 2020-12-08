@@ -181,7 +181,7 @@ table.resume td {
 p.period {
     font-style: italic;
 }
-#LI-profile-badge {
+.LI-profile-badge {
    box-shadow: 3px 3px 5px gray; /* same as in article */
     border-radius: 10px; /* same as in article */
 }
