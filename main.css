@@ -209,7 +209,7 @@ p.period {
 	width: auto;
 } */
 
-.dashboard-item h2 + */*img*/ {
+.dashboard-item img {
     width: 300px;
     height: 250px;
     vertical-align: top;
