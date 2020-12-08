@@ -61,11 +61,11 @@ article {
 		border-radius: 10px;
 		box-shadow: 3px 3px 5px gray; /* tried to make a 3D-effect for the menu bar */
   }
-section#hobby {
 
+section#hobby {
   background-color: inherit;
   border-radius: inherit;
-		box-shadow: inherit; /* tried to make a 3D-effect for the menu bar */
+  box-shadow: inherit; /* tried to make a 3D-effect for the menu bar */
   }
   section#hobby ul li {
       line-height: 1.5em;
@@ -180,7 +180,10 @@ table.resume td {
 }
 p.period {
     font-style: italic;
-
+}
+#LI-profile-badge {
+   box-shadow: 3px 3px 5px gray; /* same as in article */
+    border-radius: 10px; /* same as in article */
 }
 
 /* Portfolio page */
