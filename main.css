@@ -35,6 +35,7 @@ header a {
 	height: 23%;
 	overflow: visible;
 	background: url('logo-draft-.png') top left no-repeat;
+	opacity: 0.5;
 }
 nav {
 		font-size: 100%;
