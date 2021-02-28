@@ -1,8 +1,7 @@
 <!DOCTYPE html>  
 <html>  
   
-<head>  
-    <title>HTML Redirect</title>  
+<head>   
     <meta http-equiv="refresh"
         content="5; url = https://masha.github.io" />  
 </head>  
