@@ -24,7 +24,7 @@
               <dd>No experience in teaching the subject but big love for Math, endorsed by Calculus professors and classmates.</dd>
           </dl>
          <dl>
-            <dt>English As A Second Langyage</dt>
+            <dt>English As A Second Language</dt>
               <dd>No experience in teaching ESL but huge personal experience in learning foreigh languages, which I am passionate to share with others.</dd>
           </dl>
         </dd>
