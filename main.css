@@ -34,7 +34,7 @@ header a {
 	width: 12%;
 	height: 23%;
 	overflow: visible;
-	background: url('https://images.cooltext.com/5569437.png') top left no-repeat; /*url('logo-draft-.png') top left no-repeat;*/
+	background: url('logo-draft.png') top left no-repeat; /*url('https://images.cooltext.com/5569437.png') top left no-repeat;*/
 	opacity: 0.5;
 }
 nav {
