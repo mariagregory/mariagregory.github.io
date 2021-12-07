@@ -15,7 +15,7 @@ body {
 	background: url('logo_cv.jpg') no-repeat;
 }
 #adv header {
-	background: url('https://images.cooltext.com/5569432.png') no-repeat; /*url('logo_adv.jpg') no-repeat;*/
+	background: url('logo_adv.jpg') no-repeat;
 }
 #contact header {
 	background: url('logo_beach.jpg') no-repeat;
@@ -34,7 +34,7 @@ header a {
 	width: 12%;
 	height: 23%;
 	overflow: visible;
-	background: url('logo-draft-.png') top left no-repeat;
+	background: url('https://images.cooltext.com/5569437.png') top left no-repeat; /*url('logo-draft-.png') top left no-repeat;*/
 	opacity: 0.5;
 }
 nav {
