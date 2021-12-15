@@ -35,7 +35,7 @@ header a {
 	height: 20%;
 	overflow: visible;
 	background: url('logo-draft1.png') top left no-repeat; /*url('https://images.cooltext.com/5569437.png') top left no-repeat;*/
-	opacity: 0.5;
+	opacity: 0.4;
 }
 nav {
 		font-size: 100%;
@@ -50,8 +50,8 @@ nav div div {
 }
 
 footer {
-		font-size: small;
-		text-align: center;
+	font-size: small;
+	text-align: center;
         padding-top: -50px;
 }
 
@@ -59,8 +59,8 @@ footer {
 article {
       background-color: #eee;
     /*border: 4px ridge white;  */
-		border-radius: 10px;
-		box-shadow: 3px 3px 5px gray; /* tried to make a 3D-effect for the menu bar */
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px gray; /* tried to make a 3D-effect for the menu bar */
   }
 
 section#hobby {
@@ -68,9 +68,10 @@ section#hobby {
   border-radius: inherit;
   box-shadow: inherit; /* tried to make a 3D-effect for the menu bar */
   }
-  section#hobby ul li {
-      line-height: 1.5em;
-      margin: 1em;
+
+ section#hobby ul li {
+   line-height: 1.5em;
+    margin: 1em;
   }
 
 /* Text styles */
@@ -82,9 +83,9 @@ h1, h2, h3 {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 h1 {
-	font-size: 250%;
-	color: white;
-	text-shadow: 3px 3px 6px black; /*darkslategray;*/
+    font-size: 250%;
+    color: white;
+    text-shadow: 3px 3px 6px black; /*darkslategray;*/
     display: block;
     margin-top: -200px;
     margin-bottom: 200px;
